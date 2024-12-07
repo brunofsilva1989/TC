@@ -4155,6 +4155,26 @@ textarea.form-control-lg {
   --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
+.navbar-white {
+  background-color: white; /* Fundo branco */
+  color: black; /* Cor padrão do texto */
+  border-bottom: 1px solid #ddd; /* Opcional: borda sutil na parte inferior */
+}
+
+.navbar-white .navbar-brand {
+  color: black; /* Cor do nome/marca */
+  font-weight: bold; /* Deixa a marca em negrito */
+}
+
+.navbar-white .nav-link {
+  color: black; /* Cor dos links */
+}
+
+.navbar-white .nav-link:hover {
+  color: gray; /* Cor ao passar o mouse */
+  text-decoration: none; /* Opcional: sublinha ao passar o mouse */
+}
+
 .card {
   --bs-card-spacer-y: 1rem;
   --bs-card-spacer-x: 1rem;
