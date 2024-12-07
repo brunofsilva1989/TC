@@ -83,25 +83,37 @@
   }
 }
 
+.conf-header{
+  margin-top: 14vh;
+}
+
 body {
   display: flex;
+  padding-top: 120px;
   flex-direction: column;
-  min-height: 100vh;
-  margin: 0;
+  min-height: 100vh; /* Faz o corpo ocupar toda a altura da janela */
+  margin: 0; /* Remove margens desnecessárias */
   font-family: var(--bs-body-font-family);
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
   color: var(--bs-body-color);
   text-align: var(--bs-body-text-align);
-  background-color: var(--bs-body-bg);
-  -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  background-image: url('/assets/img/background.jpg') !important; /* Apenas a imagem aqui */
-  background-repeat: no-repeat; /* Define a repetição */
-  background-position: center; /* Centraliza a imagem */
-  background-attachment: fixed; /* Faz a imagem ficar fixa */
-  background-size: cover; /* Ajusta o tamanho da imagem para cobrir toda a área */
+  background-color: #FFFFFF; /* Cor de fundo clara */
+  background-image: url('/assets/img/background.jpg'); /* Caminho da imagem de fundo */
+  background-repeat: no-repeat; /* Evita repetição */
+  background-position: right bottom; /* Posiciona no canto inferior direito */
+  background-size: 500px; /* Mantém o tamanho original da imagem */
+  background-attachment: fixed; /* Mantém a imagem fixa ao rolar */
+}
+
+.navbar .animate__bounceIn {
+  margin-left: -100px; /* Move o logo mais à esquerda, ajustando conforme necessário */
+}
+
+.navbar img.logo-fixed {
+  height: 100%; /* Ajusta a altura do logo para igualar à navbar */
+  max-height: 95px; /* Controle adicional para evitar que o logo fique maior que a navbar */
 }
 
 html, body {
@@ -109,7 +121,6 @@ html, body {
   margin: 0 !important;
   padding: 0 !important;
 }
-
 
 hr {
   margin: 1rem 0;
@@ -5818,16 +5829,23 @@ textarea.form-control-lg {
 
 .carousel {
   position: relative;
+  margin-top: 20px; 
+  border: 2px solid #000; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 .carousel.pointer-event {
   touch-action: pan-y;
 }
 
-.carousel-inner {
+.carousel-inner img{
   position: relative;
+  height: 500px;
+  max-height: 500px;
   width: 100%;
   overflow: hidden;
+  object-fit: cover;
 }
 .carousel-inner::after {
   display: block;
