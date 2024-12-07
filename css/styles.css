@@ -100,7 +100,7 @@ body {
   color: var(--bs-body-color);
   text-align: var(--bs-body-text-align);
   background-color: #FFFFFF; /* Cor de fundo clara */
-  background-image: url('/assets/img/background.jpg'); /* Caminho da imagem de fundo */
+  background-image: url('assets/img/background.jpg'); /* Caminho da imagem de fundo */
   background-repeat: no-repeat; /* Evita repetição */
   background-position: right bottom; /* Posiciona no canto inferior direito */
   background-size: 500px; /* Mantém o tamanho original da imagem */
