@@ -5810,6 +5810,12 @@ textarea.form-control-lg {
   color: var(--bs-popover-body-color);
 }
 
+.carousel-image {
+  width: 60%; /* Ajuste a largura conforme necessário */
+  height: auto; /* Mantém a proporção da imagem */
+  margin: 0 auto; /* Centraliza a imagem */
+}
+
 .carousel {
   position: relative;
 }
