@@ -6,18 +6,7 @@
 // This file is intentionally blank
 // Use this file to add JavaScript to your project
 // Função para aceitar cookies
-document
-  .getElementById("accept-cookies")
-  .addEventListener("click", function () {
-    document.cookie =
-      "cookiesAccepted=true; path=/; max-age=" + 60 * 60 * 24 * 30; // 30 dias
-    document.getElementById("cookie-banner").style.display = "none";
-  });
 
-// Ocultar banner se o cookie já foi aceito
-if (document.cookie.includes("cookiesAccepted=true")) {
-  document.getElementById("cookie-banner").style.display = "none";
-}
 
 
 //enviar curriculo por email

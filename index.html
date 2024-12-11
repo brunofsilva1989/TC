@@ -237,7 +237,7 @@
                     <div class="small m-0 text-white">Copyright &copy; Tudo em Carnes 2024</div>
                 </div>
                 <div class="col-auto text-center text-sm-end">
-                    <a class="link-light small" href="#!">Privacidade do Site</a>
+                    <a class="link-light small" href="privacidade.html">Privacidade do Site</a>
                     <span class="text-white mx-1">&middot;</span>
                     <a class="link-light small" href="politica-qualidade.html">Política de Qualidade</a>
                     <span class="text-white mx-1">&middot;</span>
@@ -246,7 +246,33 @@
             </div>
         </div>
     </footer>
+    <!-- Aviso de Cookies -->
+    <div id="cookie-banner" class="bg-dark text-white py-3 fixed-bottom">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div>
+                Utilizamos cookies para melhorar sua experiência no site. Leia mais em nossa
+                <a href="privacidade.html" class="text-danger text-decoration-underline">
+                    Política de Privacidade
+                </a>.
+            </div>
+            <button id="accept-cookies" class="btn btn-danger btn-sm">Aceitar</button>
+        </div>
+    </div>
 
+    <script>
+        document
+            .getElementById("accept-cookies")
+            .addEventListener("click", function () {
+                document.cookie =
+                    "cookiesAccepted=true; path=/; max-age=" + 60 * 60 * 24 * 30; // 30 dias
+                document.getElementById("cookie-banner").style.display = "none";
+            });
+
+        // Ocultar banner se o cookie já foi aceito
+        if (document.cookie.includes("cookiesAccepted=true")) {
+            document.getElementById("cookie-banner").style.display = "none";
+        }
+    </script>
 </body>
 
 </html>
