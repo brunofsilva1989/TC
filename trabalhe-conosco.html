@@ -11,22 +11,17 @@
     <link rel="icon" type="image/x-icon" href="assets/FaviconTC.ico" />
     <!-- Bootstrap icons-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-    <!-- Core theme CSS (includes Bootstrap)-->
+    <!-- Core theme CSS -->
     <link href="css/styles.css" rel="stylesheet" />
     <!-- Animate CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <!--Fontawesome-->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body class="d-flex flex-column">
     <main class="flex-shrink-0">
-        <!-- Navigation-->
+        <!-- Navigation -->
         <nav class="navbar navbar-expand-lg navbar-toggler navbar-light bg-white shadow-sm fixed-top">
             <div class="container py-2 px-1">
-                <!-- Logo -->
                 <a class="animate__bounceIn" href="index.html">
                     <img class="logo-fixed" src="assets/img/logo.jpg" alt="Logo" width="120" height="95">
                 </a>
@@ -42,19 +37,22 @@
                         <li class="nav-item"><a class="nav-link" href="produtos.html">Produtos</a></li>
                         <li class="nav-item"><a class="nav-link" href="nossas-lojas.html">Nossas Lojas</a></li>
                         <li class="nav-item"><a class="nav-link" href="politica-qualidade.html">Qualidade</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="trabalhe-conosco.html">Trabalhe
+                                Conosco</a>
+                        </li>
                         <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
-                        <li class="nav-item"><a class="nav-link" href="trabalhe-conosco.html">Trabalhe Conosco</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sac.html">SAC</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-
         <!-- Formulário Trabalhe Conosco -->
-        <section class="py-5 bg-light conf-header">
+        <section class="py-5 bg-light offset-navbar">
             <div class="container px-5">
                 <div class="text-center mb-5">
                     <h2 class="fw-bolder">Trabalhe Conosco</h2>
-                    <p class="lead fw-normal text-muted">Preencha o formulário e envie seu currículo para fazer parte do nosso time.</p>
+                    <p class="lead fw-normal text-muted">Faça parte da nossa equipe! Preencha o formulário abaixo e
+                        envie seu currículo.</p>
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
@@ -62,23 +60,26 @@
                             <!-- Nome -->
                             <div class="mb-3">
                                 <label for="nome" class="form-label">Nome Completo</label>
-                                <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+                                <input type="text" class="form-control" id="nome" placeholder="Digite seu nome completo"
+                                    required>
                             </div>
                             <!-- Email -->
                             <div class="mb-3">
                                 <label for="email" class="form-label">E-mail</label>
-                                <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu e-mail" required>
+                                <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail"
+                                    required>
                             </div>
                             <!-- Telefone -->
                             <div class="mb-3">
                                 <label for="telefone" class="form-label">Telefone</label>
-                                <input type="tel" class="form-control" id="telefone" name="telefone" placeholder="Digite seu telefone" required>
+                                <input type="tel" class="form-control" id="telefone" placeholder="Digite seu telefone"
+                                    required>
                             </div>
                             <!-- Área de Interesse -->
                             <div class="mb-3">
                                 <label for="area-interesse" class="form-label">Área de Interesse</label>
-                                <select class="form-select" id="area-interesse" name="area_interesse" required>
-                                    <option value="" selected disabled>Selecione uma área</option>
+                                <select class="form-select" id="area-interesse" required>
+                                    <option value="" disabled selected>Selecione uma área</option>
                                     <option value="Administrativo">Administrativo</option>
                                     <option value="Vendas">Vendas</option>
                                     <option value="Produção">Produção</option>
@@ -89,8 +90,9 @@
                             <!-- Upload de Currículo -->
                             <div class="mb-3">
                                 <label for="curriculo" class="form-label">Anexe seu Currículo</label>
-                                <input class="form-control" type="file" id="curriculo" name="curriculo" accept=".pdf,.doc,.docx" required>
-                                <small class="text-muted">Formatos aceitos: PDF, DOC, DOCX. Tamanho máximo: 2MB.</small>
+                                <input type="file" class="form-control" id="curriculo" accept=".pdf,.doc,.docx"
+                                    required>
+                                <small class="text-muted">Formatos aceitos: PDF, DOC, DOCX (máx: 2MB).</small>
                             </div>
                             <!-- Botão de Envio -->
                             <div class="d-grid">
@@ -101,9 +103,32 @@
                 </div>
             </div>
         </section>
-    </main>
 
-    <!-- Footer -->
+        <!-- Benefícios -->
+        <section class="py-5">
+            <div class="container px-5">
+                <h3 class="fw-bolder text-center mb-4">Por que trabalhar conosco?</h3>
+                <div class="row gx-5">
+                    <div class="col-md-4 text-center">
+                        <i class="bi bi-award-fill text-danger fs-1 mb-3"></i>
+                        <h5 class="fw-bolder">Oportunidade de Crescimento</h5>
+                        <p class="text-muted">Desenvolva sua carreira em uma empresa em constante expansão.</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <i class="bi bi-people-fill text-danger fs-1 mb-3"></i>
+                        <h5 class="fw-bolder">Ambiente Colaborativo</h5>
+                        <p class="text-muted">Trabalhe em uma equipe unida e comprometida com a qualidade.</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <i class="bi bi-briefcase-fill text-danger fs-1 mb-3"></i>
+                        <h5 class="fw-bolder">Benefícios Competitivos</h5>
+                        <p class="text-muted">Oferecemos benefícios alinhados ao mercado.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer-->
     <footer class="bg-dark py-4 mt-auto">
         <div class="container px-5">
             <!-- Ícones de Redes Sociais -->
@@ -122,7 +147,8 @@
                 <div class="col text-center text-white small">
                     <div>Endereço: Avenida Nevada, 106, Santo André, SP</div>
                     <div>Telefone: (11) 4977-1200</div>
-                    <div>Email: <a href="mailto:contato@tudoemcarnes.com.br" class="link-light">contato@tudoemcarnes.com.br</a></div>
+                    <div>Email: <a href="mailto:contato@tudoemcarnes.com.br"
+                            class="link-light">contato@tudoemcarnes.com.br</a></div>
                 </div>
             </div>
             <!-- Informações de Copyright -->
@@ -141,9 +167,13 @@
         </div>
     </footer>
 
-    <!-- Bootstrap core JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <!-- Script -->
+    <script>
+        function enviarFormulario(e) {
+            e.preventDefault();
+            alert('Currículo enviado com sucesso!');
+        }
+    </script>
 </body>
 
 </html>

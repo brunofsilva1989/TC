@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Serviço de Atendimento ao Cliente - Tudo em Carnes" />
+    <meta name="author" content="Tudo em Carnes" />
+    <title>SAC - Tudo em Carnes</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/FaviconTC.ico" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body class="d-flex flex-column">
+    <main class="flex-shrink-0">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-toggler navbar-light bg-white shadow-sm fixed-top">
+            <div class="container py-2 px-1">
+                <a class="animate__bounceIn" href="index.html">
+                    <img class="logo-fixed" src="assets/img/logo.jpg" alt="Logo" width="120" height="95">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="produtos.html">Produtos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="nossas-lojas.html">Nossas Lojas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="politica-qualidade.html">Qualidade</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="trabalhe-conosco.html">Trabalhe
+                                Conosco</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sac.html">SAC</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- SAC Introduction -->
+        <header class="py-5 bg-light offset-navbar">
+            <div class="container px-5">
+                <div class="text-center">
+                    <h1 class="fw-bolder">Serviço de Atendimento ao Cliente</h1>
+                    <p class="lead fw-normal text-muted mb-4">Estamos aqui para ajudá-lo. Encontre as respostas que você precisa ou entre em contato conosco.</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- FAQ Section -->
+        <section class="py-5">
+            <div class="container px-5">
+                <h2 class="fw-bolder mb-4">Perguntas Frequentes</h2>
+                <div class="accordion" id="faqAccordion">
+                    <!-- FAQ 1 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faq1">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1"
+                                aria-expanded="true" aria-controls="collapse1">
+                                Como faço para acompanhar um pedido?
+                            </button>
+                        </h2>
+                        <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="faq1"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Você pode acompanhar o status do seu pedido acessando a página "Minha Conta" ou entrando em contato diretamente com o SAC pelo formulário abaixo.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FAQ 2 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faq2">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                Qual é o prazo de entrega dos produtos?
+                            </button>
+                        </h2>
+                        <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="faq2"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                O prazo de entrega varia de acordo com sua localização. Normalmente, os pedidos são entregues em até 5 dias úteis.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FAQ 3 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faq3">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                Como posso alterar ou cancelar um pedido?
+                            </button>
+                        </h2>
+                        <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="faq3"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Para alterar ou cancelar um pedido, entre em contato com o SAC o mais rápido possível. Pedidos já despachados não podem ser alterados.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="py-5 bg-light">
+            <div class="container px-5">
+                <h2 class="fw-bolder mb-4">Entre em Contato</h2>
+                <div class="row gx-5">
+                    <div class="col-lg-6">
+                        <form id="contactForm">
+                            <div class="mb-3">
+                                <label class="form-label" for="name">Nome</label>
+                                <input class="form-control" id="name" type="text" placeholder="Seu nome" required />
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label" for="email">E-mail</label>
+                                <input class="form-control" id="email" type="email" placeholder="Seu e-mail" required />
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label" for="message">Mensagem</label>
+                                <textarea class="form-control" id="message" type="text" placeholder="Escreva sua mensagem aqui..." required></textarea>
+                            </div>
+                            <div class="d-grid">
+                                <button class="btn btn-danger btn-lg" type="submit">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="bg-light h-100 p-4 rounded-3 shadow">
+                            <h5 class="fw-bolder">Nosso Endereço</h5>
+                            <p class="mb-0">Avenida Nevada, 106, Santo André, SP</p>
+                            <h5 class="fw-bolder mt-4">Telefone</h5>
+                            <p class="mb-0">(11) 4977-1200</p>
+                            <h5 class="fw-bolder mt-4">Horário de Atendimento</h5>
+                            <p class="mb-0">Segunda a Sexta: 8h às 18h</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer-->
+    <footer class="bg-dark py-4 mt-auto">
+        <div class="container px-5">
+            <!-- Ícones de Redes Sociais -->
+            <div class="row mt-3">
+                <div class="col text-center">
+                    <a href="https://facebook.com" target="_blank" class="text-white me-3">
+                        <i class="fab fa-facebook fa-lg"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" class="text-white me-3">
+                        <i class="fab fa-instagram fa-lg"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- Informações de Contato -->
+            <div class="row mt-3">
+                <div class="col text-center text-white small">
+                    <div>Endereço: Avenida Nevada, 106, Santo André, SP</div>
+                    <div>Telefone: (11) 4977-1200</div>
+                    <div>Email: <a href="mailto:contato@tudoemcarnes.com.br"
+                            class="link-light">contato@tudoemcarnes.com.br</a></div>
+                </div>
+            </div>
+            <!-- Informações de Copyright -->
+            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                <div class="col-auto text-center text-sm-start">
+                    <div class="small m-0 text-white">Copyright &copy; Tudo em Carnes 2024</div>
+                </div>
+                <div class="col-auto text-center text-sm-end">
+                    <a class="link-light small" href="#!">Privacidade do Site</a>
+                    <span class="text-white mx-1">&middot;</span>
+                    <a class="link-light small" href="politica-qualidade.html">Política de Qualidade</a>
+                    <span class="text-white mx-1">&middot;</span>
+                    <a class="link-light small" href="contato.html">Contato</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+            alert("Mensagem enviada com sucesso! Entraremos em contato em breve.");
+        });
+    </script>
+</body>
+
+</html>
