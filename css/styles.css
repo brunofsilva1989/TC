@@ -122,9 +122,22 @@ body {
   margin-left: -100px; /* Move o logo mais à esquerda, ajustando conforme necessário */
 }
 
+@media (max-width: 768px) {
+  .navbar .animate__bounceIn {
+      margin-left: 0; /* Remove o deslocamento lateral */
+  }
+}
+
 .navbar img.logo-fixed {
-  height: 0%; /* Ajusta a altura do logo para igualar à navbar */
-  max-height: 100px; /* Controle adicional para evitar que o logo fique maior que a navbar */
+  height: 100px; /* Ajusta a altura do logo para igualar à navbar */
+  height: auto; /* Controle adicional para evitar que o logo fique maior que a navbar */
+}
+
+.logo-fixed{
+  max-width: 100%; 
+  height: auto; 
+  display: block; 
+  margin: 0 auto;
 }
 
 /* Ajuste geral do logo */
