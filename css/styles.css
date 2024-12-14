@@ -6109,6 +6109,15 @@ textarea.form-control-lg {
   text-align: center;
 }
 
+.carousel-caption h5 {
+  color: #FFFFFF; /* Branco */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Sombra preta suave */
+}
+.carousel-caption p {
+  color: #FFFFFF; /* Branco */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Sombra preta */
+}
+
 .carousel-dark .carousel-control-prev-icon,
 .carousel-dark .carousel-control-next-icon {
   filter: invert(1) grayscale(100);
