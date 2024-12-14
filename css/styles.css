@@ -110,12 +110,12 @@ body {
   line-height: var(--bs-body-line-height);
   color: var(--bs-body-color);
   text-align: var(--bs-body-text-align);
-  background-color: #FFFFFF; /* Cor de fundo clara */
-  background-image: url(''); /* Caminho da imagem de fundo */
-  background-repeat: no-repeat; /* Evita repetição */
-  background-position: right bottom; /* Posiciona no canto inferior direito */
-  background-size: 500px; /* Mantém o tamanho original da imagem */
-  background-attachment: fixed; /* Mantém a imagem fixa ao rolar */
+  background-color: #FFFFFF; 
+  background-image: url(''); 
+  background-repeat: no-repeat; 
+  background-position: right bottom; 
+  background-size: 500px; 
+  background-attachment: fixed; 
 }
 
 .navbar .animate__bounceIn {
