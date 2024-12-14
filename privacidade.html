@@ -32,34 +32,36 @@
 <body class="d-flex flex-column">
     <main class="flex-shrink-0">
         <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
-            <div class="container py-2">
-                <a href="index.html" class="navbar-brand">
-                    <img src="assets/img/logo.jpg" alt="Logo Tudo em Carnes" width="120" height="95" />
+        <nav class="navbar navbar-expand-lg navbar-toggler navbar-light bg-white shadow-sm fixed-top">
+            <div class="container py-2 px-1">
+                <a class="animate__bounceIn" href="index.html">
+                    <img class="logo-fixed" src="assets/img/logo.jpg" alt="Logo" width="120" height="95">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
                         <li class="nav-item"><a class="nav-link" href="produtos.html">Produtos</a></li>
                         <li class="nav-item"><a class="nav-link" href="nossas-lojas.html">Nossas Lojas</a></li>
                         <li class="nav-item"><a class="nav-link" href="politica-qualidade.html">Qualidade</a></li>
-                        <li class="nav-item"><a class="nav-link" href="trabalhe-conosco.html">Trabalhe Conosco</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="trabalhe-conosco.html">Trabalhe
+                                Conosco</a>
+                        </li>
                         <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
                         <li class="nav-item"><a class="nav-link" href="sac.html">SAC</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-
         <!-- Header -->
-        <header class="py-5 bg-light">
+        <header class="py-5 bg-light offset-navbar">
             <div class="container px-5">
-                <div class="text-center">
+                <div class="text-center text-danger">
                     <h1 class="fw-bolder">Política de Privacidade</h1>
                     <p class="lead text-muted">
                         Saiba como tratamos suas informações e garantimos sua privacidade.
