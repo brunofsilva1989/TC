@@ -50,88 +50,733 @@
                         <li class="nav-item"><a class="nav-link" href="nossas-lojas.html">Nossas Lojas</a></li>
                         <li class="nav-item"><a class="nav-link" href="politica-qualidade.html">Qualidade</a></li>
                         <li class="nav-item"><a class="nav-link active" href="trabalhe-conosco.html">Trabalhe
-                                Conosco</a>
-                        </li>
+                                Conosco</a></li>
                         <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
                         <li class="nav-item"><a class="nav-link" href="sac.html">SAC</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
+
         <!-- Produtos -->
         <section class="py-5 conf-header offset-navbar">
             <div class="container px-5">
                 <div class="text-center mb-5">
-                    <h2 class="fw-bolder text-danger">Nosso catalógo de Produtos</h2>
-                    <p class="lead fw-normal text-muted">Sempre os melhores produtos para você!!!</p>
+                    <h2 class="fw-bolder text-danger">Nosso catálogo de Produtos</h2>
+                    <p class="lead fw-normal text-muted">Sempre os melhores produtos para você!</p>
                 </div>
-                <!-- Accordion -->
-                <div class="accordion" id="productAccordion">
-                    <!-- Categoria 1: Bovinos -->
+
+                <!-- Accordion Principal -->
+                <div class="accordion" id="mainAccordion">
+                    <!-- ESPETOS -->
                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingBovinos">
+                        <h2 class="accordion-header" id="headingEspetos">
                             <button class="accordion-button text-danger fw-bolder" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#collapseBovinos" aria-expanded="true"
-                                aria-controls="collapseBovinos">
-                                Bovinos
+                                data-bs-toggle="collapse" data-bs-target="#collapseEspetos" aria-expanded="true"
+                                aria-controls="collapseEspetos">
+                                ESPETOS
                             </button>
                         </h2>
-                        <div id="collapseBovinos" class="accordion-collapse collapse show"
-                            aria-labelledby="headingBovinos" data-bs-parent="#productAccordion">
+                        <div id="collapseEspetos" class="accordion-collapse collapse show"
+                            aria-labelledby="headingEspetos" data-bs-parent="#mainAccordion">
                             <div class="accordion-body">
-                                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
-                                    <!-- Produto 1 Carne com Bacon -->
-                                    <div class="col">
-                                        <div class="card h-100">
-                                            <img src="assets/img/Produtos TC/Espetos/bovino/CARNE COM BACON.png"
-                                                class="card-img-top" alt="Carne com Bacon" data-bs-toggle="modal"
-                                                data-bs-target="#modalProduto1">
-                                            <div class="card-body text-center">
-                                                <h5 class="card-title">Espeto Carne com Bacon</h5>
+                                <!-- Subaccordion de Espetos -->
+                                <div class="accordion" id="subAccordionEspetos">
+                                    <!-- Categoria 1: Bovinos -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingBovinos">
+                                            <button class="accordion-button text-danger fw-bolder" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseBovinos"
+                                                aria-expanded="true" aria-controls="collapseBovinos">
+                                                Bovinos
+                                            </button>
+                                        </h2>
+                                        <div id="collapseBovinos" class="accordion-collapse collapse show"
+                                            aria-labelledby="headingBovinos" data-bs-parent="#productAccordion">
+                                            <div class="accordion-body">
+                                                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+                                                    <!-- Produto 1 Carne com Bacon -->
+                                                    <div class="col">
+                                                        <div class="card h-100">
+                                                            <img src="assets/img/Produtos TC/Espetos/bovino/CARNE COM BACON.png"
+                                                                class="card-img-top" alt="Carne com Bacon"
+                                                                data-bs-toggle="modal" data-bs-target="#modalProduto1">
+                                                            <div class="card-body text-center">
+                                                                <h5 class="card-title">Espeto Carne com Bacon</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Produto 2 Espeto Carne-->
+                                                    <div class="col">
+                                                        <div class="card h-100">
+                                                            <img src="assets/img/Produtos TC/Espetos/bovino/CARNE.png"
+                                                                class="card-img-top" alt="Espeto Bovino"
+                                                                data-bs-toggle="modal" data-bs-target="#modalProduto2">
+                                                            <div class="card-body text-center">
+                                                                <h5 class="card-title">Espeto Carne</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Produto 3 Misto-->
+                                                    <div class="col">
+                                                        <div class="card h-100">
+                                                            <img src="assets/img/Produtos TC/Espetos/bovino/MISTO.png"
+                                                                class="card-img-top" alt="Misto" data-bs-toggle="modal"
+                                                                data-bs-target="#modalProduto3">
+                                                            <div class="card-body text-center">
+                                                                <h5 class="card-title">Espeto Misto</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Produto 4 Kafta -->
+                                                    <div class="col">
+                                                        <div class="card h-100">
+                                                            <img src="assets/img/Produtos TC/Espetos/bovino/KAFTA.png"
+                                                                class="card-img-top" alt="Carne com Bacon"
+                                                                data-bs-toggle="modal" data-bs-target="#modalProduto4">
+                                                            <div class="card-body text-center">
+                                                                <h5 class="card-title">Espeto Kafta</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Produto 5 Costela -->
+                                                    <div class="col">
+                                                        <div class="card h-100">
+                                                            <img src="assets/img/Produtos TC/Espetos/bovino/COSTELA.png"
+                                                                class="card-img-top" alt="Espeto Bovino"
+                                                                data-bs-toggle="modal" data-bs-target="#modalProduto5">
+                                                            <div class="card-body text-center">
+                                                                <h5 class="card-title">Espeto Costela</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- Produto 2 Espeto Carne-->
-                                    <div class="col">
-                                        <div class="card h-100">
-                                            <img src="assets/img/Produtos TC/Espetos/bovino/CARNE.png"
-                                                class="card-img-top" alt="Espeto Bovino" data-bs-toggle="modal"
-                                                data-bs-target="#modalProduto2">
-                                            <div class="card-body text-center">
-                                                <h5 class="card-title">Espeto Carne</h5>
+                                    <!-- Categoria 2: Suínos -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingSuinos">
+                                            <button class="accordion-button collapsed text-danger fw-bolder"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseSuinos"
+                                                aria-expanded="false" aria-controls="collapseSuinos">
+                                                Suínos
+                                            </button>
+                                        </h2>
+                                        <div id="collapseSuinos" class="accordion-collapse collapse"
+                                            aria-labelledby="headingSuinos" data-bs-parent="#productAccordion">
+                                            <div class="accordion-body">
+                                                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+                                                    <!-- Produto 5 Espeto Copa Lombo-->
+                                                    <div class="col">
+                                                        <div class="card h-100">
+                                                            <img src="assets/img/Produtos TC/Espetos/suíno/COPA LOMBO.png"
+                                                                class="card-img-top" alt="Espeto Copa Lombo"
+                                                                data-bs-toggle="modal" data-bs-target="#modalProduto10">
+                                                            <div class="card-body text-center">
+                                                                <h5 class="card-title">Espeto Copa Lombo</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Produto 6 Espeto Costelinha Suína-->
+                                                    <div class="col">
+                                                        <div class="card h-100">
+                                                            <img src="assets/img/Produtos TC/Espetos/suíno/COSTELINHA SUINA.png"
+                                                                class="card-img-top" alt="Espeto Costelinha Suína"
+                                                                data-bs-toggle="modal" data-bs-target="#modalProduto11">
+                                                            <div class="card-body text-center">
+                                                                <h5 class="card-title">Espeto Costelinha Suína</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Produto 6 Espeto Linguiça Apimentada-->
+                                                    <div class="col">
+                                                        <div class="card h-100">
+                                                            <img src="assets/img/Produtos TC/Espetos/suíno/LINGUIÇA APIMENTADA.png"
+                                                                class="card-img-top" alt="Espeto Linguiça Apimentada"
+                                                                data-bs-toggle="modal" data-bs-target="#modalProduto12">
+                                                            <div class="card-body text-center">
+                                                                <h5 class="card-title">Espeto Linguiça Apimentada</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- Produto 3 Misto-->
-                                    <div class="col">
-                                        <div class="card h-100">
-                                            <img src="assets/img/Produtos TC/Espetos/bovino/MISTO.png"
-                                                class="card-img-top" alt="Misto" data-bs-toggle="modal"
-                                                data-bs-target="#modalProduto3">
-                                            <div class="card-body text-center">
-                                                <h5 class="card-title">Espeto Misto</h5>
+                                    <!-- Categoria 3: Aves -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingAves">
+                                            <button class="accordion-button collapsed text-danger fw-bolder"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseAves"
+                                                aria-expanded="false" aria-controls="collapseAves">
+                                                Aves
+                                            </button>
+                                        </h2>
+                                        <div id="collapseAves" class="accordion-collapse collapse"
+                                            aria-labelledby="headingAves" data-bs-parent="#productAccordion">
+                                            <div class="accordion-body">
+                                                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+                                                    <!-- Produto 1 Espeto Frango-->
+                                                    <div class="col">
+                                                        <div class="card h-100">
+                                                            <img src="assets/img/Produtos TC/Espetos/aves/FRANGO.png"
+                                                                class="card-img-top" alt="Espeto Frango"
+                                                                data-bs-toggle="modal" data-bs-target="#modalProduto6">
+                                                            <div class="card-body text-center">
+                                                                <h5 class="card-title">Espeto Frango</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Produto 2 Frango com Bacon-->
+                                                    <div class="col">
+                                                        <div class="card h-100">
+                                                            <img src="assets/img/Produtos TC/Espetos/aves/FRANGO COM BACON.png"
+                                                                class="card-img-top" alt="Frango com Bacon"
+                                                                data-bs-toggle="modal" data-bs-target="#modalProduto7">
+                                                            <div class="card-body text-center">
+                                                                <h5 class="card-title">Espeto Frango com Bacon</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Produto 3 Espeto Tulipa-->
+                                                    <div class="col">
+                                                        <div class="card h-100">
+                                                            <img src="assets/img/Produtos TC/Espetos/aves/TULIPA.png"
+                                                                class="card-img-top" alt="Espeto Tulipa"
+                                                                data-bs-toggle="modal" data-bs-target="#modalProduto8">
+                                                            <div class="card-body text-center">
+                                                                <h5 class="card-title">Espeto Tulipa</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Produto 6 Espeto Coração-->
+                                                    <div class="col">
+                                                        <div class="card h-100">
+                                                            <img src="assets/img/Produtos TC/Espetos/aves/CORAÇÃO.png"
+                                                                class="card-img-top" alt="Espeto Coração"
+                                                                data-bs-toggle="modal" data-bs-target="#modalProduto9">
+                                                            <div class="card-body text-center">
+                                                                <h5 class="card-title">Espeto Coração</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- Produto 4 Kafta -->
-                                    <div class="col">
-                                        <div class="card h-100">
-                                            <img src="assets/img/Produtos TC/Espetos/bovino/KAFTA.png"
-                                                class="card-img-top" alt="Carne com Bacon" data-bs-toggle="modal"
-                                                data-bs-target="#modalProduto4">
-                                            <div class="card-body text-center">
-                                                <h5 class="card-title">Espeto Kafta</h5>
+                                    <!-- Categoria 4: Yakitoris -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingYakitoris">
+                                            <button class="accordion-button collapsed text-danger fw-bolder"
+                                                type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseYakitoris" aria-expanded="false"
+                                                aria-controls="collapseYakitoris">
+                                                Yakitoris
+                                            </button>
+                                        </h2>
+                                        <div id="collapseYakitoris" class="accordion-collapse collapse"
+                                            aria-labelledby="headingYakitoris" data-bs-parent="#productAccordion">
+                                            <div class="accordion-body">
+                                                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+                                                    <!-- Produto 5 -->
+                                                    <div class="col">
+                                                        <div class="card h-100">
+                                                            <img src="assets/img/Produtos TC/" class="card-img-top"
+                                                                alt="Linguiça Cuiabana" data-bs-toggle="modal"
+                                                                data-bs-target="#modalProduto5">
+                                                            <div class="card-body text-center">
+                                                                <h5 class="card-title">Linguiça Cuiabana</h5>
+                                                                <p class="card-text text-muted">Linguiça cuiabana, sabor
+                                                                    e qualidade
+                                                                    incomparáveis.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Produto 6 -->
+                                                    <div class="col">
+                                                        <div class="card h-100">
+                                                            <img src="assets/img/Produtos TC/" class="card-img-top"
+                                                                alt="Linguiça Toscana" data-bs-toggle="modal"
+                                                                data-bs-target="#modalProduto6">
+                                                            <div class="card-body text-center">
+                                                                <h5 class="card-title">Linguiça Toscana</h5>
+                                                                <p class="card-text text-muted">Linguiça toscana
+                                                                    tradicional para seu
+                                                                    churrasco.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Produto 6 -->
+                                                    <div class="col">
+                                                        <div class="card h-100">
+                                                            <img src="assets/img/Produtos TC/" class="card-img-top"
+                                                                alt="Linguiça Toscana" data-bs-toggle="modal"
+                                                                data-bs-target="#modalProduto6">
+                                                            <div class="card-body text-center">
+                                                                <h5 class="card-title">Linguiça Toscana</h5>
+                                                                <p class="card-text text-muted">Linguiça toscana
+                                                                    tradicional para seu
+                                                                    churrasco.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- Produto 5 Costela -->
-                                    <div class="col">
-                                        <div class="card h-100">
-                                            <img src="assets/img/Produtos TC/Espetos/bovino/COSTELA.png"
-                                                class="card-img-top" alt="Espeto Bovino" data-bs-toggle="modal"
-                                                data-bs-target="#modalProduto5">
-                                            <div class="card-body text-center">
-                                                <h5 class="card-title">Espeto Costela</h5>
+                                    <!-- Categoria 5: Medalhões -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingMedalhoes">
+                                            <button class="accordion-button collapsed text-danger fw-bolder"
+                                                type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseMedalhoes" aria-expanded="false"
+                                                aria-controls="collapseMedalhoes">
+                                                Medalhões
+                                            </button>
+                                        </h2>
+                                        <div id="collapseMedalhoes" class="accordion-collapse collapse"
+                                            aria-labelledby="headingMedalhoes" data-bs-parent="#productAccordion">
+                                            <div class="accordion-body">
+                                                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+                                                    <!-- Produto 5 -->
+                                                    <div class="col">
+                                                        <div class="card h-100">
+                                                            <img src="assets/img/Produtos TC/Espetos/medalhões/MEDALHÃO DE FRANGO.png"
+                                                                class="card-img-top" alt="Espeto Medalhão de Frango"
+                                                                data-bs-toggle="modal" data-bs-target="#modalProduto13">
+                                                            <div class="card-body text-center">
+                                                                <h5 class="card-title">Espeto Medalhão de Frango</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Produto 6 -->
+                                                    <div class="col">
+                                                        <div class="card h-100">
+                                                            <img src="assets/img/Produtos TC/Espetos/medalhões/MEDALHÃO BOVINO.png"
+                                                                class="card-img-top" alt="Espeto Medalhão Bovino"
+                                                                data-bs-toggle="modal" data-bs-target="#modalProduto14">
+                                                            <div class="card-body text-center">
+                                                                <h5 class="card-title">Espeto Medalhão Bovino</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Produto 6 -->
+                                                    <div class="col">
+                                                        <div class="card h-100">
+                                                            <img src="assets/img/Produtos TC/Espetos/medalhões/MEDALHAO SUÍNO.png"
+                                                                class="card-img-top" alt="Espeto Medalhão Suíno"
+                                                                data-bs-toggle="modal" data-bs-target="#modalProduto15">
+                                                            <div class="card-body text-center">
+                                                                <h5 class="card-title">Espeto Medalhão Suíno</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Categoria 6: Especiais -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingEspeciais">
+                                            <button class="accordion-button collapsed text-danger fw-bolder"
+                                                type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseEspeciais" aria-expanded="false"
+                                                aria-controls="collapseEspeciais">
+                                                Especiais
+                                            </button>
+                                        </h2>
+                                        <div id="collapseEspeciais" class="accordion-collapse collapse"
+                                            aria-labelledby="headingEspeciais" data-bs-parent="#productAccordion">
+                                            <div class="accordion-body">
+                                                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+                                                    <!-- Produto 1 -->
+                                                    <div class="col">
+                                                        <div class="card h-100">
+                                                            <img src="assets/img/Produtos TC/Espetos/especiais/PICANHA.png"
+                                                                class="card-img-top" alt="Espeto Picanha"
+                                                                data-bs-toggle="modal" data-bs-target="#modalProduto19">
+                                                            <div class="card-body text-center">
+                                                                <h5 class="card-title">Espeto Picanha</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Produto 2 -->
+                                                    <div class="col">
+                                                        <div class="card h-100">
+                                                            <img src="assets/img/Produtos TC/Espetos/especiais/KAFTA COM QUEIJO.png"
+                                                                class="card-img-top" alt="Espeto Kafta com Queijo"
+                                                                data-bs-toggle="modal" data-bs-target="#modalProduto20">
+                                                            <div class="card-body text-center">
+                                                                <h5 class="card-title">Espeto Kafta com Queijo</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Produto 3 -->
+                                                    <div class="col">
+                                                        <div class="card h-100">
+                                                            <img src="assets/img/Produtos TC/Espetos/especiais/FILÉ MIGNON.png"
+                                                                class="card-img-top" alt="Espeto File Mignon"
+                                                                data-bs-toggle="modal" data-bs-target="#modalProduto21">
+                                                            <div class="card-body text-center">
+                                                                <h5 class="card-title">Espeto File Mignon</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Produto 4 -->
+                                                    <div class="col">
+                                                        <div class="card h-100">
+                                                            <img src="assets/img/Produtos TC/Espetos/especiais/YAKITORI DE FRANGO.png"
+                                                                class="card-img-top" alt="Espeto Yakitori Frango"
+                                                                data-bs-toggle="modal" data-bs-target="#modalProduto22">
+                                                            <div class="card-body text-center">
+                                                                <h5 class="card-title">Espeto Yakitori Frango</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Produto 5 -->
+                                                    <div class="col">
+                                                        <div class="card h-100">
+                                                            <img src="assets/img/Produtos TC/Espetos/especiais/YAKITORI SUÍNO.png"
+                                                                class="card-img-top" alt="Espeto Yakitori Suíno"
+                                                                data-bs-toggle="modal" data-bs-target="#modalProduto23">
+                                                            <div class="card-body text-center">
+                                                                <h5 class="card-title">Espeto Yakitori Suíno</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Produto 6 -->
+                                                    <div class="col">
+                                                        <div class="card h-100">
+                                                            <img src="assets/img/Produtos TC/Espetos/especiais/YAKITORI BOVINO.png"
+                                                                class="card-img-top" alt="Espeto Yakitori Bovino"
+                                                                data-bs-toggle="modal" data-bs-target="#modalProduto24">
+                                                            <div class="card-body text-center">
+                                                                <h5 class="card-title">Espeto Yakitori Bovino</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Produto 7 -->
+                                                    <div class="col">
+                                                        <div class="card h-100">
+                                                            <img src="assets/img/Produtos TC/Espetos/especiais/LINGUICA CUIBANA SUINA.png"
+                                                                class="card-img-top" alt="Espeto Cuiabana Suína"
+                                                                data-bs-toggle="modal" data-bs-target="#modalProduto25">
+                                                            <div class="card-body text-center">
+                                                                <h5 class="card-title">Espeto Cuiabana Suína</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Produto 8 -->
+                                                    <div class="col">
+                                                        <div class="card h-100">
+                                                            <img src="assets/img/Produtos TC/Espetos/especiais/LINGUICA CUIABANA BOVINA.png"
+                                                                class="card-img-top" alt="Espeto Cuiabana Bovina"
+                                                                data-bs-toggle="modal" data-bs-target="#modalProduto26">
+                                                            <div class="card-body text-center">
+                                                                <h5 class="card-title">Espeto Cuiabana Bovina</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Categoria 7: Queijos -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingQueijos">
+                                            <button class="accordion-button collapsed text-danger fw-bolder"
+                                                type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseQueijos" aria-expanded="false"
+                                                aria-controls="collapseQueijos">
+                                                Queijos
+                                            </button>
+                                        </h2>
+                                        <div id="collapseQueijos" class="accordion-collapse collapse"
+                                            aria-labelledby="headingQueijos" data-bs-parent="#productAccordion">
+                                            <div class="accordion-body">
+                                                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+                                                    <!-- Produto 5 -->
+                                                    <div class="col">
+                                                        <div class="card h-100">
+                                                            <img src="assets/img/Produtos TC/Espetos/bovino/costela.jpg"
+                                                                class="card-img-top" alt="Linguiça Cuiabana"
+                                                                data-bs-toggle="modal" data-bs-target="#modalProduto5">
+                                                            <div class="card-body text-center">
+                                                                <h5 class="card-title">Linguiça Cuiabana</h5>
+                                                                <p class="card-text text-muted">Linguiça cuiabana, sabor
+                                                                    e qualidade
+                                                                    incomparáveis.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Produto 6 -->
+                                                    <div class="col">
+                                                        <div class="card h-100">
+                                                            <img src="assets/img/Produtos TC/Espetos/peixes e exóticos/DSC_0041.JPG"
+                                                                class="card-img-top" alt="Linguiça Toscana"
+                                                                data-bs-toggle="modal" data-bs-target="#modalProduto6">
+                                                            <div class="card-body text-center">
+                                                                <h5 class="card-title">Linguiça Toscana</h5>
+                                                                <p class="card-text text-muted">Linguiça toscana
+                                                                    tradicional para seu
+                                                                    churrasco.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Produto 6 -->
+                                                    <div class="col">
+                                                        <div class="card h-100">
+                                                            <img src="assets/img/Produtos TC/Espetos/peixes e exóticos/DSC_0041.JPG"
+                                                                class="card-img-top" alt="Linguiça Toscana"
+                                                                data-bs-toggle="modal" data-bs-target="#modalProduto6">
+                                                            <div class="card-body text-center">
+                                                                <h5 class="card-title">Linguiça Toscana</h5>
+                                                                <p class="card-text text-muted">Linguiça toscana
+                                                                    tradicional para seu
+                                                                    churrasco.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Categoria 8: Pães -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingPaes">
+                                            <button class="accordion-button collapsed text-danger fw-bolder"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#collapsePaes"
+                                                aria-expanded="false" aria-controls="collapsePaes">
+                                                Pães
+                                            </button>
+                                        </h2>
+                                        <div id="collapsePaes" class="accordion-collapse collapse"
+                                            aria-labelledby="headingPaes" data-bs-parent="#productAccordion">
+                                            <div class="accordion-body">
+                                                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+                                                    <!-- Produto 5 -->
+                                                    <div class="col">
+                                                        <div class="card h-100">
+                                                            <img src="assets/img/Produtos TC/Espetos/bovino/costela.jpg"
+                                                                class="card-img-top" alt="Linguiça Cuiabana"
+                                                                data-bs-toggle="modal" data-bs-target="#modalProduto5">
+                                                            <div class="card-body text-center">
+                                                                <h5 class="card-title">Linguiça Cuiabana</h5>
+                                                                <p class="card-text text-muted">Linguiça cuiabana, sabor
+                                                                    e qualidade
+                                                                    incomparáveis.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Produto 6 -->
+                                                    <div class="col">
+                                                        <div class="card h-100">
+                                                            <img src="assets/img/Produtos TC/Espetos/peixes e exóticos/DSC_0041.JPG"
+                                                                class="card-img-top" alt="Linguiça Toscana"
+                                                                data-bs-toggle="modal" data-bs-target="#modalProduto6">
+                                                            <div class="card-body text-center">
+                                                                <h5 class="card-title">Linguiça Toscana</h5>
+                                                                <p class="card-text text-muted">Linguiça toscana
+                                                                    tradicional para seu
+                                                                    churrasco.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Produto 6 -->
+                                                    <div class="col">
+                                                        <div class="card h-100">
+                                                            <img src="assets/img/Produtos TC/Espetos/peixes e exóticos/DSC_0041.JPG"
+                                                                class="card-img-top" alt="Linguiça Toscana"
+                                                                data-bs-toggle="modal" data-bs-target="#modalProduto6">
+                                                            <div class="card-body text-center">
+                                                                <h5 class="card-title">Linguiça Toscana</h5>
+                                                                <p class="card-text text-muted">Linguiça toscana
+                                                                    tradicional para seu
+                                                                    churrasco.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Categoria 9: Espetiokas -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingEspetiokas">
+                                            <button class="accordion-button collapsed text-danger fw-bolder"
+                                                type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseEspetiokas" aria-expanded="false"
+                                                aria-controls="collapseEspetiokas">
+                                                Espetiokas
+                                            </button>
+                                        </h2>
+                                        <div id="collapseEspetiokas" class="accordion-collapse collapse"
+                                            aria-labelledby="headingEspetiokas" data-bs-parent="#productAccordion">
+                                            <div class="accordion-body">
+                                                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+                                                    <!-- Produto 5 -->
+                                                    <div class="col">
+                                                        <div class="card h-100">
+                                                            <img src="assets/img/Produtos TC/Espetos/bovino/costela.jpg"
+                                                                class="card-img-top" alt="Linguiça Cuiabana"
+                                                                data-bs-toggle="modal" data-bs-target="#modalProduto5">
+                                                            <div class="card-body text-center">
+                                                                <h5 class="card-title">Linguiça Cuiabana</h5>
+                                                                <p class="card-text text-muted">Linguiça cuiabana, sabor
+                                                                    e qualidade
+                                                                    incomparáveis.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Produto 6 -->
+                                                    <div class="col">
+                                                        <div class="card h-100">
+                                                            <img src="assets/img/Produtos TC/Espetos/peixes e exóticos/DSC_0041.JPG"
+                                                                class="card-img-top" alt="Linguiça Toscana"
+                                                                data-bs-toggle="modal" data-bs-target="#modalProduto6">
+                                                            <div class="card-body text-center">
+                                                                <h5 class="card-title">Linguiça Toscana</h5>
+                                                                <p class="card-text text-muted">Linguiça toscana
+                                                                    tradicional para seu
+                                                                    churrasco.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Produto 6 -->
+                                                    <div class="col">
+                                                        <div class="card h-100">
+                                                            <img src="assets/img/Produtos TC/Espetos/peixes e exóticos/DSC_0041.JPG"
+                                                                class="card-img-top" alt="Linguiça Toscana"
+                                                                data-bs-toggle="modal" data-bs-target="#modalProduto6">
+                                                            <div class="card-body text-center">
+                                                                <h5 class="card-title">Linguiça Toscana</h5>
+                                                                <p class="card-text text-muted">Linguiça toscana
+                                                                    tradicional para seu
+                                                                    churrasco.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Categoria 10: Crustáceo -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingCrustaceo">
+                                            <button class="accordion-button collapsed text-danger fw-bolder"
+                                                type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseCrustaceo" aria-expanded="false"
+                                                aria-controls="collapseCrustaceo">
+                                                Crustáceo
+                                            </button>
+                                        </h2>
+                                        <div id="collapseCrustaceo" class="accordion-collapse collapse"
+                                            aria-labelledby="headingCrustaceo" data-bs-parent="#productAccordion">
+                                            <div class="accordion-body">
+                                                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+                                                    <!-- Produto 5 -->
+                                                    <div class="col">
+                                                        <div class="card h-100">
+                                                            <img src="assets/img/Produtos TC/Espetos/bovino/costela.jpg"
+                                                                class="card-img-top" alt="Linguiça Cuiabana"
+                                                                data-bs-toggle="modal" data-bs-target="#modalProduto5">
+                                                            <div class="card-body text-center">
+                                                                <h5 class="card-title">Linguiça Cuiabana</h5>
+                                                                <p class="card-text text-muted">Linguiça cuiabana, sabor
+                                                                    e qualidade
+                                                                    incomparáveis.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Produto 6 -->
+                                                    <div class="col">
+                                                        <div class="card h-100">
+                                                            <img src="assets/img/Produtos TC/Espetos/peixes e exóticos/DSC_0041.JPG"
+                                                                class="card-img-top" alt="Linguiça Toscana"
+                                                                data-bs-toggle="modal" data-bs-target="#modalProduto6">
+                                                            <div class="card-body text-center">
+                                                                <h5 class="card-title">Linguiça Toscana</h5>
+                                                                <p class="card-text text-muted">Linguiça toscana
+                                                                    tradicional para seu
+                                                                    churrasco.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Produto 6 -->
+                                                    <div class="col">
+                                                        <div class="card h-100">
+                                                            <img src="assets/img/Produtos TC/Espetos/peixes e exóticos/DSC_0041.JPG"
+                                                                class="card-img-top" alt="Linguiça Toscana"
+                                                                data-bs-toggle="modal" data-bs-target="#modalProduto6">
+                                                            <div class="card-body text-center">
+                                                                <h5 class="card-title">Linguiça Toscana</h5>
+                                                                <p class="card-text text-muted">Linguiça toscana
+                                                                    tradicional para seu
+                                                                    churrasco.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Categoria : Peixes -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingPeixes">
+                                            <button class="accordion-button collapsed text-danger fw-bolder"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#collapsePeixes"
+                                                aria-expanded="false" aria-controls="collapsePeixes">
+                                                Peixes
+                                            </button>
+                                        </h2>
+                                        <div id="collapsePeixes" class="accordion-collapse collapse"
+                                            aria-labelledby="headingPeixes" data-bs-parent="#productAccordion">
+                                            <div class="accordion-body">
+                                                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+                                                    <!-- Produto 5 -->
+                                                    <div class="col">
+                                                        <div class="card h-100">
+                                                            <img src="assets/img/Produtos TC/Espetos/bovino/costela.jpg"
+                                                                class="card-img-top" alt="Linguiça Cuiabana"
+                                                                data-bs-toggle="modal" data-bs-target="#modalProduto5">
+                                                            <div class="card-body text-center">
+                                                                <h5 class="card-title">Linguiça Cuiabana</h5>
+                                                                <p class="card-text text-muted">Linguiça cuiabana, sabor
+                                                                    e qualidade
+                                                                    incomparáveis.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Produto 6 -->
+                                                    <div class="col">
+                                                        <div class="card h-100">
+                                                            <img src="assets/img/Produtos TC/Espetos/peixes e exóticos/DSC_0041.JPG"
+                                                                class="card-img-top" alt="Linguiça Toscana"
+                                                                data-bs-toggle="modal" data-bs-target="#modalProduto6">
+                                                            <div class="card-body text-center">
+                                                                <h5 class="card-title">Linguiça Toscana</h5>
+                                                                <p class="card-text text-muted">Linguiça toscana
+                                                                    tradicional para seu
+                                                                    churrasco.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Produto 6 -->
+                                                    <div class="col">
+                                                        <div class="card h-100">
+                                                            <img src="assets/img/Produtos TC/Espetos/peixes e exóticos/DSC_0041.JPG"
+                                                                class="card-img-top" alt="Linguiça Toscana"
+                                                                data-bs-toggle="modal" data-bs-target="#modalProduto6">
+                                                            <div class="card-body text-center">
+                                                                <h5 class="card-title">Linguiça Toscana</h5>
+                                                                <p class="card-text text-muted">Linguiça toscana
+                                                                    tradicional para seu
+                                                                    churrasco.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -139,931 +784,221 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Categoria 2: Aves -->
+                    <!-- OUTROS -->
                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingAves">
-                            <button class="accordion-button collapsed text-danger fw-bolder" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#collapseAves" aria-expanded="false"
-                                aria-controls="collapseAves">
-                                Aves
+                        <h2 class="accordion-header" id="headingEspetos">
+                            <button class="accordion-button text-danger fw-bolder" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseOutros" aria-expanded="true"
+                                aria-controls="collapseEspetos">
+                                OUTROS
                             </button>
                         </h2>
-                        <div id="collapseAves" class="accordion-collapse collapse" aria-labelledby="headingAves"
-                            data-bs-parent="#productAccordion">
+                        <div id="collapseOutros" class="accordion-collapse collapse" aria-labelledby="headingOutros"
+                            data-bs-parent="#mainAccordion">
                             <div class="accordion-body">
-                                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
-                                    <!-- Produto 1 Espeto Frango-->
-                                    <div class="col">
-                                        <div class="card h-100">
-                                            <img src="assets/img/Produtos TC/Espetos/aves/FRANGO.png"
-                                                class="card-img-top" alt="Espeto Frango" data-bs-toggle="modal"
-                                                data-bs-target="#modalProduto6">
-                                            <div class="card-body text-center">
-                                                <h5 class="card-title">Espeto Frango</h5>
+                                <!-- Subaccordion de Espetos -->
+                                <div class="accordion" id="subAccordionOutros">
+                                    <!-- Categoria 6: Cuiabanas -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingCuiabanas">
+                                            <button class="accordion-button collapsed text-danger fw-bolder"
+                                                type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseCuiabanas" aria-expanded="false"
+                                                aria-controls="collapseCuiabanas">
+                                                Cuiabanas
+                                            </button>
+                                        </h2>
+                                        <div id="collapseCuiabanas" class="accordion-collapse collapse"
+                                            aria-labelledby="headingCuiabanas" data-bs-parent="#productAccordion">
+                                            <div class="accordion-body">
+                                                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+                                                    <!-- Produto 1 Linguiça Cuiabana Suína -->
+                                                    <div class="col">
+                                                        <div class="card h-100">
+                                                            <img src="assets/img/Produtos TC/CuiabanasArgolas/CUIABANA SUÍNA.png"
+                                                                class="card-img-top" alt="Linguiça Cuiabana Suína"
+                                                                data-bs-toggle="modal" data-bs-target="#modalProduto16">
+                                                            <div class="card-body text-center">
+                                                                <h5 class="card-title">Linguiça Cuiabana Suína</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Produto 2 Linguiça Cuiabana Bovina -->
+                                                    <div class="col">
+                                                        <div class="card h-100">
+                                                            <img src="assets/img/Produtos TC/CuiabanasArgolas/CUIABANA BOVINA.png"
+                                                                class="card-img-top" alt="Linguiça Cuiabana Bovina"
+                                                                data-bs-toggle="modal" data-bs-target="#modalProduto17">
+                                                            <div class="card-body text-center">
+                                                                <h5 class="card-title">Linguiça Cuiabana Bovina</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Produto 3 Linguiça Cuiabana Frango -->
+                                                    <div class="col">
+                                                        <div class="card h-100">
+                                                            <img src="assets/img/Produtos TC/CuiabanasArgolas/CUIABANA FRANGO.png"
+                                                                class="card-img-top" alt="Linguiça Cuiabana Frango"
+                                                                data-bs-toggle="modal" data-bs-target="#modalProduto18">
+                                                            <div class="card-body text-center">
+                                                                <h5 class="card-title">Linguiça Cuiabana Frango</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- Produto 2 Frango com Bacon-->
-                                    <div class="col">
-                                        <div class="card h-100">
-                                            <img src="assets/img/Produtos TC/Espetos/aves/FRANGO COM BACON.png"
-                                                class="card-img-top" alt="Frango com Bacon" data-bs-toggle="modal"
-                                                data-bs-target="#modalProduto7">
-                                            <div class="card-body text-center">
-                                                <h5 class="card-title">Espeto Frango com Bacon</h5>
+                                    <!-- Linguiças 7 Recheadas -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingRecheadas">
+                                            <button class="accordion-button collapsed text-danger fw-bolder"
+                                                type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseRecheadas" aria-expanded="false"
+                                                aria-controls="collapseRecheadas">
+                                                Linguiças Recheadas
+                                            </button>
+                                        </h2>
+                                        <div id="collapseRecheadas" class="accordion-collapse collapse"
+                                            aria-labelledby="headingRecheadas" data-bs-parent="#productAccordion">
+                                            <div class="accordion-body">
+                                                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+                                                    <!-- Produto 1 Linguiça Cuiabana Suína -->
+                                                    <div class="col">
+                                                        <div class="card h-100">
+                                                            <img src="assets/img/Produtos TC/CuiabanasArgolas/CUIABANA SUÍNA.png"
+                                                                class="card-img-top" alt="Linguiça Cuiabana Suína"
+                                                                data-bs-toggle="modal" data-bs-target="#modalProduto16">
+                                                            <div class="card-body text-center">
+                                                                <h5 class="card-title">Linguiça Cuiabana Suína</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Produto 2 Linguiça Cuiabana Bovina -->
+                                                    <div class="col">
+                                                        <div class="card h-100">
+                                                            <img src="assets/img/Produtos TC/CuiabanasArgolas/CUIABANA BOVINA.png"
+                                                                class="card-img-top" alt="Linguiça Cuiabana Bovina"
+                                                                data-bs-toggle="modal" data-bs-target="#modalProduto17">
+                                                            <div class="card-body text-center">
+                                                                <h5 class="card-title">Linguiça Cuiabana Bovina</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Produto 3 Linguiça Cuiabana Frango -->
+                                                    <div class="col">
+                                                        <div class="card h-100">
+                                                            <img src="assets/img/Produtos TC/CuiabanasArgolas/CUIABANA FRANGO.png"
+                                                                class="card-img-top" alt="Linguiça Cuiabana Frango"
+                                                                data-bs-toggle="modal" data-bs-target="#modalProduto18">
+                                                            <div class="card-body text-center">
+                                                                <h5 class="card-title">Linguiça Cuiabana Frango</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- Produto 3 Espeto Tulipa-->
-                                    <div class="col">
-                                        <div class="card h-100">
-                                            <img src="assets/img/Produtos TC/Espetos/aves/TULIPA.png"
-                                                class="card-img-top" alt="Espeto Tulipa" data-bs-toggle="modal"
-                                                data-bs-target="#modalProduto8">
-                                            <div class="card-body text-center">
-                                                <h5 class="card-title">Espeto Tulipa</h5>
+                                    <!-- Categoria 8 Molhos e Pimentas-->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingCuiabanas">
+                                            <button class="accordion-button collapsed text-danger fw-bolder"
+                                                type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseCuiabanas" aria-expanded="false"
+                                                aria-controls="collapseCuiabanas">
+                                                Molhos e Pimentas
+                                            </button>
+                                        </h2>
+                                        <div id="collapseCuiabanas" class="accordion-collapse collapse"
+                                            aria-labelledby="headingCuiabanas" data-bs-parent="#productAccordion">
+                                            <div class="accordion-body">
+                                                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+                                                    <!-- Produto 1 Linguiça Cuiabana Suína -->
+                                                    <div class="col">
+                                                        <div class="card h-100">
+                                                            <img src="assets/img/Produtos TC/CuiabanasArgolas/CUIABANA SUÍNA.png"
+                                                                class="card-img-top" alt="Linguiça Cuiabana Suína"
+                                                                data-bs-toggle="modal" data-bs-target="#modalProduto16">
+                                                            <div class="card-body text-center">
+                                                                <h5 class="card-title">Linguiça Cuiabana Suína</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Produto 2 Linguiça Cuiabana Bovina -->
+                                                    <div class="col">
+                                                        <div class="card h-100">
+                                                            <img src="assets/img/Produtos TC/CuiabanasArgolas/CUIABANA BOVINA.png"
+                                                                class="card-img-top" alt="Linguiça Cuiabana Bovina"
+                                                                data-bs-toggle="modal" data-bs-target="#modalProduto17">
+                                                            <div class="card-body text-center">
+                                                                <h5 class="card-title">Linguiça Cuiabana Bovina</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Produto 3 Linguiça Cuiabana Frango -->
+                                                    <div class="col">
+                                                        <div class="card h-100">
+                                                            <img src="assets/img/Produtos TC/CuiabanasArgolas/CUIABANA FRANGO.png"
+                                                                class="card-img-top" alt="Linguiça Cuiabana Frango"
+                                                                data-bs-toggle="modal" data-bs-target="#modalProduto18">
+                                                            <div class="card-body text-center">
+                                                                <h5 class="card-title">Linguiça Cuiabana Frango</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- Produto 6 Espeto Coração-->
-                                    <div class="col">
-                                        <div class="card h-100">
-                                            <img src="assets/img/Produtos TC/Espetos/aves/CORAÇÃO.png"
-                                                class="card-img-top" alt="Espeto Coração" data-bs-toggle="modal"
-                                                data-bs-target="#modalProduto9">
-                                            <div class="card-body text-center">
-                                                <h5 class="card-title">Espeto Coração</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Categoria 3: Suínos -->
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingSuinos">
-                            <button class="accordion-button collapsed text-danger fw-bolder" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#collapseSuinos" aria-expanded="false"
-                                aria-controls="collapseSuinos">
-                                Suínos
-                            </button>
-                        </h2>
-                        <div id="collapseSuinos" class="accordion-collapse collapse" aria-labelledby="headingSuinos"
-                            data-bs-parent="#productAccordion">
-                            <div class="accordion-body">
-                                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
-                                    <!-- Produto 5 Espeto Copa Lombo-->
-                                    <div class="col">
-                                        <div class="card h-100">
-                                            <img src="assets/img/Produtos TC/Espetos/suíno/COPA LOMBO.png"
-                                                class="card-img-top" alt="Espeto Copa Lombo" data-bs-toggle="modal"
-                                                data-bs-target="#modalProduto10">
-                                            <div class="card-body text-center">
-                                                <h5 class="card-title">Espeto Copa Lombo</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Produto 6 Espeto Costelinha Suína-->
-                                    <div class="col">
-                                        <div class="card h-100">
-                                            <img src="assets/img/Produtos TC/Espetos/suíno/COSTELINHA SUINA.png"
-                                                class="card-img-top" alt="Espeto Costelinha Suína"
-                                                data-bs-toggle="modal" data-bs-target="#modalProduto11">
-                                            <div class="card-body text-center">
-                                                <h5 class="card-title">Espeto Costelinha Suína</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Produto 6 Espeto Linguiça Apimentada-->
-                                    <div class="col">
-                                        <div class="card h-100">
-                                            <img src="assets/img/Produtos TC/Espetos/suíno/LINGUIÇA APIMENTADA.png"
-                                                class="card-img-top" alt="Espeto Linguiça Apimentada"
-                                                data-bs-toggle="modal" data-bs-target="#modalProduto12">
-                                            <div class="card-body text-center">
-                                                <h5 class="card-title">Espeto Linguiça Apimentada</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Categoria 4: Medalhões -->
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingMedalhoes">
-                            <button class="accordion-button collapsed text-danger fw-bolder" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#collapseMedalhoes" aria-expanded="false"
-                                aria-controls="collapseMedalhoes">
-                                Medalhões
-                            </button>
-                        </h2>
-                        <div id="collapseMedalhoes" class="accordion-collapse collapse"
-                            aria-labelledby="headingMedalhoes" data-bs-parent="#productAccordion">
-                            <div class="accordion-body">
-                                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
-                                    <!-- Produto 5 -->
-                                    <div class="col">
-                                        <div class="card h-100">
-                                            <img src="assets/img/Produtos TC/Espetos/medalhões/MEDALHÃO DE FRANGO.png"
-                                                class="card-img-top" alt="Espeto Medalhão de Frango"
-                                                data-bs-toggle="modal" data-bs-target="#modalProduto13">
-                                            <div class="card-body text-center">
-                                                <h5 class="card-title">Espeto Medalhão de Frango</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Produto 6 -->
-                                    <div class="col">
-                                        <div class="card h-100">
-                                            <img src="assets/img/Produtos TC/Espetos/medalhões/MEDALHÃO BOVINO.png"
-                                                class="card-img-top" alt="Espeto Medalhão Bovino" data-bs-toggle="modal"
-                                                data-bs-target="#modalProduto14">
-                                            <div class="card-body text-center">
-                                                <h5 class="card-title">Espeto Medalhão Bovino</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Produto 6 -->
-                                    <div class="col">
-                                        <div class="card h-100">
-                                            <img src="assets/img/Produtos TC/Espetos/medalhões/MEDALHAO SUÍNO.png"
-                                                class="card-img-top" alt="Espeto Medalhão Suíno" data-bs-toggle="modal"
-                                                data-bs-target="#modalProduto15">
-                                            <div class="card-body text-center">
-                                                <h5 class="card-title">Espeto Medalhão Suíno</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Categoria 5: Yakitoris -->
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingYakitoris">
-                            <button class="accordion-button collapsed text-danger fw-bolder" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#collapseYakitoris" aria-expanded="false"
-                                aria-controls="collapseYakitoris">
-                                Yakitoris
-                            </button>
-                        </h2>
-                        <div id="collapseYakitoris" class="accordion-collapse collapse"
-                            aria-labelledby="headingYakitoris" data-bs-parent="#productAccordion">
-                            <div class="accordion-body">
-                                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
-                                    <!-- Produto 5 -->
-                                    <div class="col">
-                                        <div class="card h-100">
-                                            <img src="assets/img/Produtos TC/" class="card-img-top"
-                                                alt="Linguiça Cuiabana" data-bs-toggle="modal"
-                                                data-bs-target="#modalProduto5">
-                                            <div class="card-body text-center">
-                                                <h5 class="card-title">Linguiça Cuiabana</h5>
-                                                <p class="card-text text-muted">Linguiça cuiabana, sabor e qualidade
-                                                    incomparáveis.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Produto 6 -->
-                                    <div class="col">
-                                        <div class="card h-100">
-                                            <img src="assets/img/Produtos TC/" class="card-img-top"
-                                                alt="Linguiça Toscana" data-bs-toggle="modal"
-                                                data-bs-target="#modalProduto6">
-                                            <div class="card-body text-center">
-                                                <h5 class="card-title">Linguiça Toscana</h5>
-                                                <p class="card-text text-muted">Linguiça toscana tradicional para seu
-                                                    churrasco.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Produto 6 -->
-                                    <div class="col">
-                                        <div class="card h-100">
-                                            <img src="assets/img/Produtos TC/" class="card-img-top"
-                                                alt="Linguiça Toscana" data-bs-toggle="modal"
-                                                data-bs-target="#modalProduto6">
-                                            <div class="card-body text-center">
-                                                <h5 class="card-title">Linguiça Toscana</h5>
-                                                <p class="card-text text-muted">Linguiça toscana tradicional para seu
-                                                    churrasco.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Categoria 6: Cuiabanas -->
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingCuiabanas">
-                            <button class="accordion-button collapsed text-danger fw-bolder" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#collapseCuiabanas" aria-expanded="false"
-                                aria-controls="collapseCuiabanas">
-                                Cuiabanas
-                            </button>
-                        </h2>
-                        <div id="collapseCuiabanas" class="accordion-collapse collapse"
-                            aria-labelledby="headingCuiabanas" data-bs-parent="#productAccordion">
-                            <div class="accordion-body">
-                                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
-                                    <!-- Produto 1 Linguiça Cuiabana Suína -->
-                                    <div class="col">
-                                        <div class="card h-100">
-                                            <img src="assets/img/Produtos TC/CuiabanasArgolas/CUIABANA SUÍNA.png"
-                                                class="card-img-top" alt="Linguiça Cuiabana Suína"
-                                                data-bs-toggle="modal" data-bs-target="#modalProduto16">
-                                            <div class="card-body text-center">
-                                                <h5 class="card-title">Linguiça Cuiabana Suína</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Produto 2 Linguiça Cuiabana Bovina -->
-                                    <div class="col">
-                                        <div class="card h-100">
-                                            <img src="assets/img/Produtos TC/CuiabanasArgolas/CUIABANA BOVINA.png"
-                                                class="card-img-top" alt="Linguiça Cuiabana Bovina"
-                                                data-bs-toggle="modal" data-bs-target="#modalProduto17">
-                                            <div class="card-body text-center">
-                                                <h5 class="card-title">Linguiça Cuiabana Bovina</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Produto 3 Linguiça Cuiabana Frango -->
-                                    <div class="col">
-                                        <div class="card h-100">
-                                            <img src="assets/img/Produtos TC/CuiabanasArgolas/CUIABANA FRANGO.png"
-                                                class="card-img-top" alt="Linguiça Cuiabana Frango"
-                                                data-bs-toggle="modal" data-bs-target="#modalProduto18">
-                                            <div class="card-body text-center">
-                                                <h5 class="card-title">Linguiça Cuiabana Frango</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Categoria 7: Salsichões -->
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingSalsichoes">
-                            <button class="accordion-button collapsed text-danger fw-bolder" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#collapseSalsichoes" aria-expanded="false"
-                                aria-controls="collapseSalsichoes">
-                                Salsichões
-                            </button>
-                        </h2>
-                        <div id="collapseSalsichoes" class="accordion-collapse collapse"
-                            aria-labelledby="headingSalsichoes" data-bs-parent="#productAccordion">
-                            <div class="accordion-body">
-                                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
-                                    <!-- Produto 5 -->
-                                    <div class="col">
-                                        <div class="card h-100">
-                                            <img src="assets/img/Produtos TC/" class="card-img-top"
-                                                alt="Linguiça Cuiabana" data-bs-toggle="modal"
-                                                data-bs-target="#modalProduto5">
-                                            <div class="card-body text-center">
-                                                <h5 class="card-title">Linguiça Cuiabana</h5>
-                                                <p class="card-text text-muted">Linguiça cuiabana, sabor e qualidade
-                                                    incomparáveis.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Produto 6 -->
-                                    <div class="col">
-                                        <div class="card h-100">
-                                            <img src="assets/img/Produtos TC/" class="card-img-top"
-                                                alt="Linguiça Toscana" data-bs-toggle="modal"
-                                                data-bs-target="#modalProduto6">
-                                            <div class="card-body text-center">
-                                                <h5 class="card-title">Linguiça Toscana</h5>
-                                                <p class="card-text text-muted">Linguiça toscana tradicional para seu
-                                                    churrasco.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Produto 6 -->
-                                    <div class="col">
-                                        <div class="card h-100">
-                                            <img src="assets/img/Produtos TC/" class="card-img-top"
-                                                alt="Linguiça Toscana" data-bs-toggle="modal"
-                                                data-bs-target="#modalProduto6">
-                                            <div class="card-body text-center">
-                                                <h5 class="card-title">Linguiça Toscana</h5>
-                                                <p class="card-text text-muted">Linguiça toscana tradicional para seu
-                                                    churrasco.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Categoria 8: Especiais -->
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingEspeciais">
-                            <button class="accordion-button collapsed text-danger fw-bolder" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#collapseEspeciais" aria-expanded="false"
-                                aria-controls="collapseEspeciais">
-                                Especiais
-                            </button>
-                        </h2>
-                        <div id="collapseEspeciais" class="accordion-collapse collapse"
-                            aria-labelledby="headingEspeciais" data-bs-parent="#productAccordion">
-                            <div class="accordion-body">
-                                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
-                                    <!-- Produto 1 -->
-                                    <div class="col">
-                                        <div class="card h-100">
-                                            <img src="assets/img/Produtos TC/Espetos/especiais/PICANHA.png"
-                                                class="card-img-top" alt="Espeto Picanha" data-bs-toggle="modal"
-                                                data-bs-target="#modalProduto19">
-                                            <div class="card-body text-center">
-                                                <h5 class="card-title">Espeto Picanha</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Produto 2 -->
-                                    <div class="col">
-                                        <div class="card h-100">
-                                            <img src="assets/img/Produtos TC/Espetos/especiais/KAFTA COM QUEIJO.png"
-                                                class="card-img-top" alt="Espeto Kafta com Queijo"
-                                                data-bs-toggle="modal" data-bs-target="#modalProduto20">
-                                            <div class="card-body text-center">
-                                                <h5 class="card-title">Espeto Kafta com Queijo</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Produto 3 -->
-                                    <div class="col">
-                                        <div class="card h-100">
-                                            <img src="assets/img/Produtos TC/Espetos/especiais/FILÉ MIGNON.png"
-                                                class="card-img-top" alt="Espeto File Mignon" data-bs-toggle="modal"
-                                                data-bs-target="#modalProduto21">
-                                            <div class="card-body text-center">
-                                                <h5 class="card-title">Espeto File Mignon</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Produto 4 -->
-                                    <div class="col">
-                                        <div class="card h-100">
-                                            <img src="assets/img/Produtos TC/Espetos/especiais/YAKITORI DE FRANGO.png"
-                                                class="card-img-top" alt="Espeto Yakitori Frango" data-bs-toggle="modal"
-                                                data-bs-target="#modalProduto22">
-                                            <div class="card-body text-center">
-                                                <h5 class="card-title">Espeto Yakitori Frango</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Produto 5 -->
-                                    <div class="col">
-                                        <div class="card h-100">
-                                            <img src="assets/img/Produtos TC/Espetos/especiais/YAKITORI SUÍNO.png"
-                                                class="card-img-top" alt="Espeto Yakitori Suíno" data-bs-toggle="modal"
-                                                data-bs-target="#modalProduto23">
-                                            <div class="card-body text-center">
-                                                <h5 class="card-title">Espeto Yakitori Suíno</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Produto 6 -->
-                                    <div class="col">
-                                        <div class="card h-100">
-                                            <img src="assets/img/Produtos TC/Espetos/especiais/YAKITORI BOVINO.png"
-                                                class="card-img-top" alt="Espeto Yakitori Bovino" data-bs-toggle="modal"
-                                                data-bs-target="#modalProduto24">
-                                            <div class="card-body text-center">
-                                                <h5 class="card-title">Espeto Yakitori Bovino</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Produto 7 -->
-                                    <div class="col">
-                                        <div class="card h-100">
-                                            <img src="assets/img/Produtos TC/Espetos/especiais/LINGUICA CUIBANA SUINA.png"
-                                                class="card-img-top" alt="Espeto Cuiabana Suína" data-bs-toggle="modal"
-                                                data-bs-target="#modalProduto25">
-                                            <div class="card-body text-center">
-                                                <h5 class="card-title">Espeto Cuiabana Suína</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Produto 8 -->
-                                    <div class="col">
-                                        <div class="card h-100">
-                                            <img src="assets/img/Produtos TC/Espetos/especiais/LINGUICA CUIABANA BOVINA.png"
-                                                class="card-img-top" alt="Espeto Cuiabana Bovina" data-bs-toggle="modal"
-                                                data-bs-target="#modalProduto26">
-                                            <div class="card-body text-center">
-                                                <h5 class="card-title">Espeto Cuiabana Bovina</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Categoria 9: Peixes -->
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingPeixes">
-                            <button class="accordion-button collapsed text-danger fw-bolder" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#collapsePeixes" aria-expanded="false"
-                                aria-controls="collapsePeixes">
-                                Peixes
-                            </button>
-                        </h2>
-                        <div id="collapsePeixes" class="accordion-collapse collapse" aria-labelledby="headingPeixes"
-                            data-bs-parent="#productAccordion">
-                            <div class="accordion-body">
-                                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
-                                    <!-- Produto 5 -->
-                                    <div class="col">
-                                        <div class="card h-100">
-                                            <img src="assets/img/Produtos TC/Espetos/bovino/costela.jpg"
-                                                class="card-img-top" alt="Linguiça Cuiabana" data-bs-toggle="modal"
-                                                data-bs-target="#modalProduto5">
-                                            <div class="card-body text-center">
-                                                <h5 class="card-title">Linguiça Cuiabana</h5>
-                                                <p class="card-text text-muted">Linguiça cuiabana, sabor e qualidade
-                                                    incomparáveis.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Produto 6 -->
-                                    <div class="col">
-                                        <div class="card h-100">
-                                            <img src="assets/img/Produtos TC/Espetos/peixes e exóticos/DSC_0041.JPG"
-                                                class="card-img-top" alt="Linguiça Toscana" data-bs-toggle="modal"
-                                                data-bs-target="#modalProduto6">
-                                            <div class="card-body text-center">
-                                                <h5 class="card-title">Linguiça Toscana</h5>
-                                                <p class="card-text text-muted">Linguiça toscana tradicional para seu
-                                                    churrasco.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Produto 6 -->
-                                    <div class="col">
-                                        <div class="card h-100">
-                                            <img src="assets/img/Produtos TC/Espetos/peixes e exóticos/DSC_0041.JPG"
-                                                class="card-img-top" alt="Linguiça Toscana" data-bs-toggle="modal"
-                                                data-bs-target="#modalProduto6">
-                                            <div class="card-body text-center">
-                                                <h5 class="card-title">Linguiça Toscana</h5>
-                                                <p class="card-text text-muted">Linguiça toscana tradicional para seu
-                                                    churrasco.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Categoria 10: Crustáceo -->
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingCrustaceo">
-                            <button class="accordion-button collapsed text-danger fw-bolder" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#collapseCrustaceo" aria-expanded="false"
-                                aria-controls="collapseCrustaceo">
-                                Crustáceo
-                            </button>
-                        </h2>
-                        <div id="collapseCrustaceo" class="accordion-collapse collapse"
-                            aria-labelledby="headingCrustaceo" data-bs-parent="#productAccordion">
-                            <div class="accordion-body">
-                                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
-                                    <!-- Produto 5 -->
-                                    <div class="col">
-                                        <div class="card h-100">
-                                            <img src="assets/img/Produtos TC/Espetos/bovino/costela.jpg"
-                                                class="card-img-top" alt="Linguiça Cuiabana" data-bs-toggle="modal"
-                                                data-bs-target="#modalProduto5">
-                                            <div class="card-body text-center">
-                                                <h5 class="card-title">Linguiça Cuiabana</h5>
-                                                <p class="card-text text-muted">Linguiça cuiabana, sabor e qualidade
-                                                    incomparáveis.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Produto 6 -->
-                                    <div class="col">
-                                        <div class="card h-100">
-                                            <img src="assets/img/Produtos TC/Espetos/peixes e exóticos/DSC_0041.JPG"
-                                                class="card-img-top" alt="Linguiça Toscana" data-bs-toggle="modal"
-                                                data-bs-target="#modalProduto6">
-                                            <div class="card-body text-center">
-                                                <h5 class="card-title">Linguiça Toscana</h5>
-                                                <p class="card-text text-muted">Linguiça toscana tradicional para seu
-                                                    churrasco.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Produto 6 -->
-                                    <div class="col">
-                                        <div class="card h-100">
-                                            <img src="assets/img/Produtos TC/Espetos/peixes e exóticos/DSC_0041.JPG"
-                                                class="card-img-top" alt="Linguiça Toscana" data-bs-toggle="modal"
-                                                data-bs-target="#modalProduto6">
-                                            <div class="card-body text-center">
-                                                <h5 class="card-title">Linguiça Toscana</h5>
-                                                <p class="card-text text-muted">Linguiça toscana tradicional para seu
-                                                    churrasco.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Categoria 11: Exóticos -->
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingExoticos">
-                            <button class="accordion-button collapsed text-danger fw-bolder" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#collapseExoticos" aria-expanded="false"
-                                aria-controls="collapseExoticos">
-                                Exóticos
-                            </button>
-                        </h2>
-                        <div id="collapseExoticos" class="accordion-collapse collapse" aria-labelledby="headingExoticos"
-                            data-bs-parent="#productAccordion">
-                            <div class="accordion-body">
-                                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
-                                    <!-- Produto 5 -->
-                                    <div class="col">
-                                        <div class="card h-100">
-                                            <img src="assets/img/Produtos TC/Espetos/bovino/costela.jpg"
-                                                class="card-img-top" alt="Linguiça Cuiabana" data-bs-toggle="modal"
-                                                data-bs-target="#modalProduto5">
-                                            <div class="card-body text-center">
-                                                <h5 class="card-title">Linguiça Cuiabana</h5>
-                                                <p class="card-text text-muted">Linguiça cuiabana, sabor e qualidade
-                                                    incomparáveis.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Produto 6 -->
-                                    <div class="col">
-                                        <div class="card h-100">
-                                            <img src="assets/img/Produtos TC/Espetos/peixes e exóticos/DSC_0041.JPG"
-                                                class="card-img-top" alt="Linguiça Toscana" data-bs-toggle="modal"
-                                                data-bs-target="#modalProduto6">
-                                            <div class="card-body text-center">
-                                                <h5 class="card-title">Linguiça Toscana</h5>
-                                                <p class="card-text text-muted">Linguiça toscana tradicional para seu
-                                                    churrasco.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Produto 6 -->
-                                    <div class="col">
-                                        <div class="card h-100">
-                                            <img src="assets/img/Produtos TC/Espetos/peixes e exóticos/DSC_0041.JPG"
-                                                class="card-img-top" alt="Linguiça Toscana" data-bs-toggle="modal"
-                                                data-bs-target="#modalProduto6">
-                                            <div class="card-body text-center">
-                                                <h5 class="card-title">Linguiça Toscana</h5>
-                                                <p class="card-text text-muted">Linguiça toscana tradicional para seu
-                                                    churrasco.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Categoria 12: Queijos -->
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingQueijos">
-                            <button class="accordion-button collapsed text-danger fw-bolder" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#collapseQueijos" aria-expanded="false"
-                                aria-controls="collapseQueijos">
-                                Queijos
-                            </button>
-                        </h2>
-                        <div id="collapseQueijos" class="accordion-collapse collapse" aria-labelledby="headingQueijos"
-                            data-bs-parent="#productAccordion">
-                            <div class="accordion-body">
-                                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
-                                    <!-- Produto 5 -->
-                                    <div class="col">
-                                        <div class="card h-100">
-                                            <img src="assets/img/Produtos TC/Espetos/bovino/costela.jpg"
-                                                class="card-img-top" alt="Linguiça Cuiabana" data-bs-toggle="modal"
-                                                data-bs-target="#modalProduto5">
-                                            <div class="card-body text-center">
-                                                <h5 class="card-title">Linguiça Cuiabana</h5>
-                                                <p class="card-text text-muted">Linguiça cuiabana, sabor e qualidade
-                                                    incomparáveis.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Produto 6 -->
-                                    <div class="col">
-                                        <div class="card h-100">
-                                            <img src="assets/img/Produtos TC/Espetos/peixes e exóticos/DSC_0041.JPG"
-                                                class="card-img-top" alt="Linguiça Toscana" data-bs-toggle="modal"
-                                                data-bs-target="#modalProduto6">
-                                            <div class="card-body text-center">
-                                                <h5 class="card-title">Linguiça Toscana</h5>
-                                                <p class="card-text text-muted">Linguiça toscana tradicional para seu
-                                                    churrasco.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Produto 6 -->
-                                    <div class="col">
-                                        <div class="card h-100">
-                                            <img src="assets/img/Produtos TC/Espetos/peixes e exóticos/DSC_0041.JPG"
-                                                class="card-img-top" alt="Linguiça Toscana" data-bs-toggle="modal"
-                                                data-bs-target="#modalProduto6">
-                                            <div class="card-body text-center">
-                                                <h5 class="card-title">Linguiça Toscana</h5>
-                                                <p class="card-text text-muted">Linguiça toscana tradicional para seu
-                                                    churrasco.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Categoria 13: Espetiokas -->
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingEspetiokas">
-                            <button class="accordion-button collapsed text-danger fw-bolder" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#collapseEspetiokas" aria-expanded="false"
-                                aria-controls="collapseEspetiokas">
-                                Espetiokas
-                            </button>
-                        </h2>
-                        <div id="collapseEspetiokas" class="accordion-collapse collapse"
-                            aria-labelledby="headingEspetiokas" data-bs-parent="#productAccordion">
-                            <div class="accordion-body">
-                                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
-                                    <!-- Produto 5 -->
-                                    <div class="col">
-                                        <div class="card h-100">
-                                            <img src="assets/img/Produtos TC/Espetos/bovino/costela.jpg"
-                                                class="card-img-top" alt="Linguiça Cuiabana" data-bs-toggle="modal"
-                                                data-bs-target="#modalProduto5">
-                                            <div class="card-body text-center">
-                                                <h5 class="card-title">Linguiça Cuiabana</h5>
-                                                <p class="card-text text-muted">Linguiça cuiabana, sabor e qualidade
-                                                    incomparáveis.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Produto 6 -->
-                                    <div class="col">
-                                        <div class="card h-100">
-                                            <img src="assets/img/Produtos TC/Espetos/peixes e exóticos/DSC_0041.JPG"
-                                                class="card-img-top" alt="Linguiça Toscana" data-bs-toggle="modal"
-                                                data-bs-target="#modalProduto6">
-                                            <div class="card-body text-center">
-                                                <h5 class="card-title">Linguiça Toscana</h5>
-                                                <p class="card-text text-muted">Linguiça toscana tradicional para seu
-                                                    churrasco.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Produto 6 -->
-                                    <div class="col">
-                                        <div class="card h-100">
-                                            <img src="assets/img/Produtos TC/Espetos/peixes e exóticos/DSC_0041.JPG"
-                                                class="card-img-top" alt="Linguiça Toscana" data-bs-toggle="modal"
-                                                data-bs-target="#modalProduto6">
-                                            <div class="card-body text-center">
-                                                <h5 class="card-title">Linguiça Toscana</h5>
-                                                <p class="card-text text-muted">Linguiça toscana tradicional para seu
-                                                    churrasco.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Categoria 14: Pães -->
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingPaes">
-                            <button class="accordion-button collapsed text-danger fw-bolder" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#collapsePaes" aria-expanded="false"
-                                aria-controls="collapsePaes">
-                                Pães
-                            </button>
-                        </h2>
-                        <div id="collapsePaes" class="accordion-collapse collapse" aria-labelledby="headingPaes"
-                            data-bs-parent="#productAccordion">
-                            <div class="accordion-body">
-                                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
-                                    <!-- Produto 5 -->
-                                    <div class="col">
-                                        <div class="card h-100">
-                                            <img src="assets/img/Produtos TC/Espetos/bovino/costela.jpg"
-                                                class="card-img-top" alt="Linguiça Cuiabana" data-bs-toggle="modal"
-                                                data-bs-target="#modalProduto5">
-                                            <div class="card-body text-center">
-                                                <h5 class="card-title">Linguiça Cuiabana</h5>
-                                                <p class="card-text text-muted">Linguiça cuiabana, sabor e qualidade
-                                                    incomparáveis.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Produto 6 -->
-                                    <div class="col">
-                                        <div class="card h-100">
-                                            <img src="assets/img/Produtos TC/Espetos/peixes e exóticos/DSC_0041.JPG"
-                                                class="card-img-top" alt="Linguiça Toscana" data-bs-toggle="modal"
-                                                data-bs-target="#modalProduto6">
-                                            <div class="card-body text-center">
-                                                <h5 class="card-title">Linguiça Toscana</h5>
-                                                <p class="card-text text-muted">Linguiça toscana tradicional para seu
-                                                    churrasco.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Produto 6 -->
-                                    <div class="col">
-                                        <div class="card h-100">
-                                            <img src="assets/img/Produtos TC/Espetos/peixes e exóticos/DSC_0041.JPG"
-                                                class="card-img-top" alt="Linguiça Toscana" data-bs-toggle="modal"
-                                                data-bs-target="#modalProduto6">
-                                            <div class="card-body text-center">
-                                                <h5 class="card-title">Linguiça Toscana</h5>
-                                                <p class="card-text text-muted">Linguiça toscana tradicional para seu
-                                                    churrasco.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Categoria 15: Linguiças -->
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingLinguicas">
-                            <button class="accordion-button collapsed text-danger fw-bolder" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#collapseLinguicas" aria-expanded="false"
-                                aria-controls="collapseLinguicas">
-                                Linguiças
-                            </button>
-                        </h2>
-                        <div id="collapseLinguicas" class="accordion-collapse collapse"
-                            aria-labelledby="headingLinguicas" data-bs-parent="#productAccordion">
-                            <div class="accordion-body">
-                                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
-                                    <!-- Produto 5 -->
-                                    <div class="col">
-                                        <div class="card h-100">
-                                            <img src="assets/img/Produtos TC/Espetos/bovino/costela.jpg"
-                                                class="card-img-top" alt="Linguiça Cuiabana" data-bs-toggle="modal"
-                                                data-bs-target="#modalProduto5">
-                                            <div class="card-body text-center">
-                                                <h5 class="card-title">Linguiça Cuiabana</h5>
-                                                <p class="card-text text-muted">Linguiça cuiabana, sabor e qualidade
-                                                    incomparáveis.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Produto 6 -->
-                                    <div class="col">
-                                        <div class="card h-100">
-                                            <img src="assets/img/Produtos TC/Espetos/peixes e exóticos/DSC_0041.JPG"
-                                                class="card-img-top" alt="Linguiça Toscana" data-bs-toggle="modal"
-                                                data-bs-target="#modalProduto6">
-                                            <div class="card-body text-center">
-                                                <h5 class="card-title">Linguiça Toscana</h5>
-                                                <p class="card-text text-muted">Linguiça toscana tradicional para seu
-                                                    churrasco.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Produto 6 -->
-                                    <div class="col">
-                                        <div class="card h-100">
-                                            <img src="assets/img/Produtos TC/Espetos/peixes e exóticos/DSC_0041.JPG"
-                                                class="card-img-top" alt="Linguiça Toscana" data-bs-toggle="modal"
-                                                data-bs-target="#modalProduto6">
-                                            <div class="card-body text-center">
-                                                <h5 class="card-title">Linguiça Toscana</h5>
-                                                <p class="card-text text-muted">Linguiça toscana tradicional para seu
-                                                    churrasco.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Categoria 16: Manta -->
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingManta">
-                            <button class="accordion-button collapsed text-danger fw-bolder" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#collapseManta" aria-expanded="false"
-                                aria-controls="collapseManta">
-                                Manta
-                            </button>
-                        </h2>
-                        <div id="collapseManta" class="accordion-collapse collapse" aria-labelledby="headingManta"
-                            data-bs-parent="#productAccordion">
-                            <div class="accordion-body">
-                                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
-                                    <!-- Produto 5 -->
-                                    <div class="col">
-                                        <div class="card h-100">
-                                            <img src="assets/img/Produtos TC/Espetos/bovino/costela.jpg"
-                                                class="card-img-top" alt="Linguiça Cuiabana" data-bs-toggle="modal"
-                                                data-bs-target="#modalProduto5">
-                                            <div class="card-body text-center">
-                                                <h5 class="card-title">Linguiça Cuiabana</h5>
-                                                <p class="card-text text-muted">Linguiça cuiabana, sabor e qualidade
-                                                    incomparáveis.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Produto 6 -->
-                                    <div class="col">
-                                        <div class="card h-100">
-                                            <img src="assets/img/Produtos TC/Espetos/peixes e exóticos/DSC_0041.JPG"
-                                                class="card-img-top" alt="Linguiça Toscana" data-bs-toggle="modal"
-                                                data-bs-target="#modalProduto6">
-                                            <div class="card-body text-center">
-                                                <h5 class="card-title">Linguiça Toscana</h5>
-                                                <p class="card-text text-muted">Linguiça toscana tradicional para seu
-                                                    churrasco.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Produto 6 -->
-                                    <div class="col">
-                                        <div class="card h-100">
-                                            <img src="assets/img/Produtos TC/Espetos/peixes e exóticos/DSC_0041.JPG"
-                                                class="card-img-top" alt="Linguiça Toscana" data-bs-toggle="modal"
-                                                data-bs-target="#modalProduto6">
-                                            <div class="card-body text-center">
-                                                <h5 class="card-title">Linguiça Toscana</h5>
-                                                <p class="card-text text-muted">Linguiça toscana tradicional para seu
-                                                    churrasco.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Categoria 17: Afins -->
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingAfins">
-                            <button class="accordion-button collapsed text-danger fw-bolder" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#collapseAfins" aria-expanded="false"
-                                aria-controls="collapseAfins">
-                                Afins
-                            </button>
-                        </h2>
-                        <div id="collapseAfins" class="accordion-collapse collapse" aria-labelledby="headingAfins"
-                            data-bs-parent="#productAccordion">
-                            <div class="accordion-body">
-                                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
-                                    <!-- Produto 5 -->
-                                    <div class="col">
-                                        <div class="card h-100">
-                                            <img src="assets/img/Produtos TC/Espetos/bovino/costela.jpg"
-                                                class="card-img-top" alt="Linguiça Cuiabana" data-bs-toggle="modal"
-                                                data-bs-target="#modalProduto5">
-                                            <div class="card-body text-center">
-                                                <h5 class="card-title">Linguiça Cuiabana</h5>
-                                                <p class="card-text text-muted">Linguiça cuiabana, sabor e qualidade
-                                                    incomparáveis.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Produto 6 -->
-                                    <div class="col">
-                                        <div class="card h-100">
-                                            <img src="assets/img/Produtos TC/Espetos/peixes e exóticos/DSC_0041.JPG"
-                                                class="card-img-top" alt="Linguiça Toscana" data-bs-toggle="modal"
-                                                data-bs-target="#modalProduto6">
-                                            <div class="card-body text-center">
-                                                <h5 class="card-title">Linguiça Toscana</h5>
-                                                <p class="card-text text-muted">Linguiça toscana tradicional para seu
-                                                    churrasco.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Produto 6 -->
-                                    <div class="col">
-                                        <div class="card h-100">
-                                            <img src="assets/img/Produtos TC/Espetos/peixes e exóticos/DSC_0041.JPG"
-                                                class="card-img-top" alt="Linguiça Toscana" data-bs-toggle="modal"
-                                                data-bs-target="#modalProduto6">
-                                            <div class="card-body text-center">
-                                                <h5 class="card-title">Linguiça Toscana</h5>
-                                                <p class="card-text text-muted">Linguiça toscana tradicional para seu
-                                                    churrasco.</p>
+                                    <!-- Afins -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingCuiabanas">
+                                            <button class="accordion-button collapsed text-danger fw-bolder"
+                                                type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseCuiabanas" aria-expanded="false"
+                                                aria-controls="collapseCuiabanas">
+                                                Afins
+                                            </button>
+                                        </h2>
+                                        <div id="collapseCuiabanas" class="accordion-collapse collapse"
+                                            aria-labelledby="headingCuiabanas" data-bs-parent="#productAccordion">
+                                            <div class="accordion-body">
+                                                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+                                                    <!-- Produto 1 Linguiça Cuiabana Suína -->
+                                                    <div class="col">
+                                                        <div class="card h-100">
+                                                            <img src="assets/img/Produtos TC/CuiabanasArgolas/CUIABANA SUÍNA.png"
+                                                                class="card-img-top" alt="Linguiça Cuiabana Suína"
+                                                                data-bs-toggle="modal" data-bs-target="#modalProduto16">
+                                                            <div class="card-body text-center">
+                                                                <h5 class="card-title">Linguiça Cuiabana Suína</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Produto 2 Linguiça Cuiabana Bovina -->
+                                                    <div class="col">
+                                                        <div class="card h-100">
+                                                            <img src="assets/img/Produtos TC/CuiabanasArgolas/CUIABANA BOVINA.png"
+                                                                class="card-img-top" alt="Linguiça Cuiabana Bovina"
+                                                                data-bs-toggle="modal" data-bs-target="#modalProduto17">
+                                                            <div class="card-body text-center">
+                                                                <h5 class="card-title">Linguiça Cuiabana Bovina</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Produto 3 Linguiça Cuiabana Frango -->
+                                                    <div class="col">
+                                                        <div class="card h-100">
+                                                            <img src="assets/img/Produtos TC/CuiabanasArgolas/CUIABANA FRANGO.png"
+                                                                class="card-img-top" alt="Linguiça Cuiabana Frango"
+                                                                data-bs-toggle="modal" data-bs-target="#modalProduto18">
+                                                            <div class="card-body text-center">
+                                                                <h5 class="card-title">Linguiça Cuiabana Frango</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -1074,6 +1009,8 @@
                 </div>
             </div>
         </section>
+
+        <!-- Section Modais -->
         <!-- Modais dos Produtos Bovinos -->
         <section>
             <div class="modal fade" id="modalProduto1" tabindex="-1" aria-labelledby="modalProduto1Label">
@@ -1090,8 +1027,7 @@
                     </div>
                 </div>
             </div>
-            <div class="modal fade" id="modalProduto2" tabindex="-1" aria-labelledby="modalProduto2Label"
-                >
+            <div class="modal fade" id="modalProduto2" tabindex="-1" aria-labelledby="modalProduto2Label">
                 <div class="modal-dialog modal-lg modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -1105,8 +1041,7 @@
                     </div>
                 </div>
             </div>
-            <div class="modal fade" id="modalProduto3" tabindex="-1" aria-labelledby="modalProduto3Label"
-                >
+            <div class="modal fade" id="modalProduto3" tabindex="-1" aria-labelledby="modalProduto3Label">
                 <div class="modal-dialog modal-lg modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -1120,8 +1055,7 @@
                     </div>
                 </div>
             </div>
-            <div class="modal fade" id="modalProduto4" tabindex="-1" aria-labelledby="modalProduto4Label"
-                >
+            <div class="modal fade" id="modalProduto4" tabindex="-1" aria-labelledby="modalProduto4Label">
                 <div class="modal-dialog modal-lg modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -1135,8 +1069,7 @@
                     </div>
                 </div>
             </div>
-            <div class="modal fade" id="modalProduto5" tabindex="-1" aria-labelledby="modalProduto5Label"
-                >
+            <div class="modal fade" id="modalProduto5" tabindex="-1" aria-labelledby="modalProduto5Label">
                 <div class="modal-dialog modal-lg modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -1151,73 +1084,10 @@
                 </div>
             </div>
         </section>
-        <!-- Modais dos Produtos Aves -->
-        <section>
-            <div class="modal fade" id="modalProduto6" tabindex="-1" aria-labelledby="modalProduto6Label"
-                >
-                <div class="modal-dialog modal-lg modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="modalProduto6Label">Espeto Frango</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <img src="assets/img/Produtos TC/Espetos/aves/frango.jpg" class="img-fluid rounded"
-                                alt="espeto frango">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal fade" id="modalProduto7" tabindex="-1" aria-labelledby="modalProduto7Label"
-                >
-                <div class="modal-dialog modal-lg modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="modalProduto7Label">Espeto Frango com Bacon</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <img src="assets/img/Produtos TC/Espetos/aves/frango com bacon.jpg"
-                                class="img-fluid rounded" alt="carne">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal fade" id="modalProduto8" tabindex="-1" aria-labelledby="modalProduto8Label"
-                >
-                <div class="modal-dialog modal-lg modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="modalProduto8Label">Espeto Tulipa</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <img src="assets/img/Produtos TC/Espetos/aves/tulipa.jpg" class="img-fluid rounded"
-                                alt="carne">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal fade" id="modalProduto9" tabindex="-1" aria-labelledby="modalProduto9Label"
-                >
-                <div class="modal-dialog modal-lg modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="modalProduto9Label">Espeto Coração</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <img src="assets/img/Produtos TC/Espetos/aves/coração.jpg" class="img-fluid rounded"
-                                alt="kafta">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+
         <!-- Modais dos Produtos Suínos -->
         <section>
-            <div class="modal fade" id="modalProduto10" tabindex="-1" aria-labelledby="modalProduto10Label"
-                >
+            <div class="modal fade" id="modalProduto10" tabindex="-1" aria-labelledby="modalProduto10Label">
                 <div class="modal-dialog modal-lg modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -1231,8 +1101,7 @@
                     </div>
                 </div>
             </div>
-            <div class="modal fade" id="modalProduto11" tabindex="-1" aria-labelledby="modalProduto11Label"
-                >
+            <div class="modal fade" id="modalProduto11" tabindex="-1" aria-labelledby="modalProduto11Label">
                 <div class="modal-dialog modal-lg modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -1246,8 +1115,7 @@
                     </div>
                 </div>
             </div>
-            <div class="modal fade" id="modalProduto12" tabindex="-1" aria-labelledby="modalProduto12Label"
-                >
+            <div class="modal fade" id="modalProduto12" tabindex="-1" aria-labelledby="modalProduto12Label">
                 <div class="modal-dialog modal-lg modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -1262,10 +1130,70 @@
                 </div>
             </div>
         </section>
-        <!-- Modais dos Produtos Medalhões -->
+
+        <!-- Modais dos Produtos Aves -->
         <section>
-            <div class="modal fade" id="modalProduto13" tabindex="-1" aria-labelledby="modalProduto13Label"
-                >
+            <div class="modal fade" id="modalProduto6" tabindex="-1" aria-labelledby="modalProduto6Label">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalProduto6Label">Espeto Frango</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="assets/img/Produtos TC/Espetos/aves/frango.jpg" class="img-fluid rounded"
+                                alt="espeto frango">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modalProduto7" tabindex="-1" aria-labelledby="modalProduto7Label">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalProduto7Label">Espeto Frango com Bacon</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="assets/img/Produtos TC/Espetos/aves/frango com bacon.jpg"
+                                class="img-fluid rounded" alt="carne">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modalProduto8" tabindex="-1" aria-labelledby="modalProduto8Label">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalProduto8Label">Espeto Tulipa</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="assets/img/Produtos TC/Espetos/aves/tulipa.jpg" class="img-fluid rounded"
+                                alt="carne">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modalProduto9" tabindex="-1" aria-labelledby="modalProduto9Label">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalProduto9Label">Espeto Coração</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="assets/img/Produtos TC/Espetos/aves/coração.jpg" class="img-fluid rounded"
+                                alt="kafta">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modais dos Produtos Yakitoris (TODO - AJUSTAR) -->
+        <section>
+            <div class="modal fade" id="modalProduto13" tabindex="-1" aria-labelledby="modalProduto13Label">
                 <div class="modal-dialog modal-lg modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -1279,8 +1207,7 @@
                     </div>
                 </div>
             </div>
-            <div class="modal fade" id="modalProduto14" tabindex="-1" aria-labelledby="modalProduto14Label"
-                >
+            <div class="modal fade" id="modalProduto14" tabindex="-1" aria-labelledby="modalProduto14Label">
                 <div class="modal-dialog modal-lg modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -1294,8 +1221,7 @@
                     </div>
                 </div>
             </div>
-            <div class="modal fade" id="modalProduto15" tabindex="-1" aria-labelledby="modalProduto15Label"
-                >
+            <div class="modal fade" id="modalProduto15" tabindex="-1" aria-labelledby="modalProduto15Label">
                 <div class="modal-dialog modal-lg modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -1310,58 +1236,56 @@
                 </div>
             </div>
         </section>
-        <!-- Modais dos Produtos Cuiabanas -->
+
+        <!-- Modais dos Produtos Medalhões -->
         <section>
-            <div class="modal fade" id="modalProduto16" tabindex="-1" aria-labelledby="modalProduto16Label"
-                >
+            <div class="modal fade" id="modalProduto13" tabindex="-1" aria-labelledby="modalProduto13Label">
                 <div class="modal-dialog modal-lg modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="modalProduto16Label">Linguiça Cuiabana Suína</h5>
+                            <h5 class="modal-title" id="modalProduto13Label">Espeto Medalhão Frango</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <img src="assets/img/Produtos TC/CuiabanasArgolas/cuiabana suína.jpg"
+                            <img src="assets/img/Produtos TC/Espetos/medalhões/medalhão frango.jpg"
                                 class="img-fluid rounded" alt="Espeto Medalhão Frango">
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="modal fade" id="modalProduto17" tabindex="-1" aria-labelledby="modalProduto17Label"
-                >
+            <div class="modal fade" id="modalProduto14" tabindex="-1" aria-labelledby="modalProduto14Label">
                 <div class="modal-dialog modal-lg modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="modalProduto17Label">Linguiça Cuiabana Bovina</h5>
+                            <h5 class="modal-title" id="modalProduto14Label">Espeto Medalhão Bovino</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <img src="assets/img/Produtos TC/CuiabanasArgolas/cuiabana bovina.jpg"
+                            <img src="assets/img/Produtos TC/Espetos/medalhões/medalhão bovino.jpg"
                                 class="img-fluid rounded" alt="carne">
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="modal fade" id="modalProduto18" tabindex="-1" aria-labelledby="modalProduto18Label"
-                >
+            <div class="modal fade" id="modalProduto15" tabindex="-1" aria-labelledby="modalProduto15Label">
                 <div class="modal-dialog modal-lg modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="modalProduto18Label">Linguiça Cuiabana Frango</h5>
+                            <h5 class="modal-title" id="modalProduto15Label">Espeto Medalhão Suíno</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <img src="assets/img/Produtos TC/CuiabanasArgolas/cuiabana de frango.jpg"
+                            <img src="assets/img/Produtos TC/Espetos/medalhões/medalhao suino.jpg"
                                 class="img-fluid rounded" alt="carne">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
         <!-- Modais dos Produtos Especiais -->
         <section>
-            <div class="modal fade" id="modalProduto19" tabindex="-1" aria-labelledby="modalProduto19Label"
-                >
+            <div class="modal fade" id="modalProduto19" tabindex="-1" aria-labelledby="modalProduto19Label">
                 <div class="modal-dialog modal-lg modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -1369,14 +1293,13 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <img src="assets/img/Produtos TC/Espetos/especiais/PICANHA.jpg"
-                                class="img-fluid rounded" alt="Espeto Medalhão Frango">
+                            <img src="assets/img/Produtos TC/Espetos/especiais/PICANHA.jpg" class="img-fluid rounded"
+                                alt="Espeto Medalhão Frango">
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="modal fade" id="modalProduto20" tabindex="-1" aria-labelledby="modalProduto20Label"
-                >
+            <div class="modal fade" id="modalProduto20" tabindex="-1" aria-labelledby="modalProduto20Label">
                 <div class="modal-dialog modal-lg modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -1390,8 +1313,7 @@
                     </div>
                 </div>
             </div>
-            <div class="modal fade" id="modalProduto21" tabindex="-1" aria-labelledby="modalProduto21Label"
-                >
+            <div class="modal fade" id="modalProduto21" tabindex="-1" aria-labelledby="modalProduto21Label">
                 <div class="modal-dialog modal-lg modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -1405,8 +1327,7 @@
                     </div>
                 </div>
             </div>
-            <div class="modal fade" id="modalProduto22" tabindex="-1" aria-labelledby="modalProduto22Label"
-                >
+            <div class="modal fade" id="modalProduto22" tabindex="-1" aria-labelledby="modalProduto22Label">
                 <div class="modal-dialog modal-lg modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -1420,8 +1341,7 @@
                     </div>
                 </div>
             </div>
-            <div class="modal fade" id="modalProduto23" tabindex="-1" aria-labelledby="modalProduto23Label"
-                >
+            <div class="modal fade" id="modalProduto23" tabindex="-1" aria-labelledby="modalProduto23Label">
                 <div class="modal-dialog modal-lg modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -1435,13 +1355,13 @@
                     </div>
                 </div>
             </div>
-            <div class="modal fade" id="modalProduto24" tabindex="-1" aria-labelledby="modalProduto24Label"
-                >
+            <div class="modal fade" id="modalProduto24" tabindex="-1" aria-labelledby="modalProduto24Label">
                 <div class="modal-dialog modal-lg modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
                             <h5 class="modal-title" id="modalProduto18Label">Espeto Yakitori Bovino/h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
                             <img src="assets/img/Produtos TC/Espetos/especiais/yakitory bovino.jpg"
@@ -1450,8 +1370,7 @@
                     </div>
                 </div>
             </div>
-            <div class="modal fade" id="modalProduto25" tabindex="-1" aria-labelledby="modalProduto25Label"
-                >
+            <div class="modal fade" id="modalProduto25" tabindex="-1" aria-labelledby="modalProduto25Label">
                 <div class="modal-dialog modal-lg modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -1465,8 +1384,7 @@
                     </div>
                 </div>
             </div>
-            <div class="modal fade" id="modalProduto26" tabindex="-1" aria-labelledby="modalProduto26Label"
-                >
+            <div class="modal fade" id="modalProduto26" tabindex="-1" aria-labelledby="modalProduto26Label">
                 <div class="modal-dialog modal-lg modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -1481,7 +1399,375 @@
                 </div>
             </div>
         </section>
-        <!-- Modais adicionais para os demais produtos... -->
+
+        <!-- Modais dos Produtos Queijos (TODO - AJUSTAR) -->
+        <section>
+            <div class="modal fade" id="modalProduto13" tabindex="-1" aria-labelledby="modalProduto13Label">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalProduto13Label">Espeto Medalhão Frango</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="assets/img/Produtos TC/Espetos/medalhões/medalhão frango.jpg"
+                                class="img-fluid rounded" alt="Espeto Medalhão Frango">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modalProduto14" tabindex="-1" aria-labelledby="modalProduto14Label">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalProduto14Label">Espeto Medalhão Bovino</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="assets/img/Produtos TC/Espetos/medalhões/medalhão bovino.jpg"
+                                class="img-fluid rounded" alt="carne">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modalProduto15" tabindex="-1" aria-labelledby="modalProduto15Label">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalProduto15Label">Espeto Medalhão Suíno</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="assets/img/Produtos TC/Espetos/medalhões/medalhao suino.jpg"
+                                class="img-fluid rounded" alt="carne">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modais dos Produtos Pães Salgados e Doces (TODO - AJUSTAR) -->
+        <section>
+            <div class="modal fade" id="modalProduto13" tabindex="-1" aria-labelledby="modalProduto13Label">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalProduto13Label">Espeto Medalhão Frango</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="assets/img/Produtos TC/Espetos/medalhões/medalhão frango.jpg"
+                                class="img-fluid rounded" alt="Espeto Medalhão Frango">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modalProduto14" tabindex="-1" aria-labelledby="modalProduto14Label">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalProduto14Label">Espeto Medalhão Bovino</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="assets/img/Produtos TC/Espetos/medalhões/medalhão bovino.jpg"
+                                class="img-fluid rounded" alt="carne">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modalProduto15" tabindex="-1" aria-labelledby="modalProduto15Label">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalProduto15Label">Espeto Medalhão Suíno</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="assets/img/Produtos TC/Espetos/medalhões/medalhao suino.jpg"
+                                class="img-fluid rounded" alt="carne">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modais dos Produtos Espetiokas (TODO - AJUSTAR) -->
+        <section>
+            <div class="modal fade" id="modalProduto13" tabindex="-1" aria-labelledby="modalProduto13Label">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalProduto13Label">Espeto Medalhão Frango</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="assets/img/Produtos TC/Espetos/medalhões/medalhão frango.jpg"
+                                class="img-fluid rounded" alt="Espeto Medalhão Frango">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modalProduto14" tabindex="-1" aria-labelledby="modalProduto14Label">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalProduto14Label">Espeto Medalhão Bovino</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="assets/img/Produtos TC/Espetos/medalhões/medalhão bovino.jpg"
+                                class="img-fluid rounded" alt="carne">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modalProduto15" tabindex="-1" aria-labelledby="modalProduto15Label">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalProduto15Label">Espeto Medalhão Suíno</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="assets/img/Produtos TC/Espetos/medalhões/medalhao suino.jpg"
+                                class="img-fluid rounded" alt="carne">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modais dos Produtos Peixes e Crustáceos (TODO - AJUSTAR) -->
+        <section>
+            <div class="modal fade" id="modalProduto13" tabindex="-1" aria-labelledby="modalProduto13Label">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalProduto13Label">Espeto Medalhão Frango</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="assets/img/Produtos TC/Espetos/medalhões/medalhão frango.jpg"
+                                class="img-fluid rounded" alt="Espeto Medalhão Frango">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modalProduto14" tabindex="-1" aria-labelledby="modalProduto14Label">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalProduto14Label">Espeto Medalhão Bovino</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="assets/img/Produtos TC/Espetos/medalhões/medalhão bovino.jpg"
+                                class="img-fluid rounded" alt="carne">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modalProduto15" tabindex="-1" aria-labelledby="modalProduto15Label">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalProduto15Label">Espeto Medalhão Suíno</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="assets/img/Produtos TC/Espetos/medalhões/medalhao suino.jpg"
+                                class="img-fluid rounded" alt="carne">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modais dos Produtos Cuiabanas -->
+        <section>
+            <div class="modal fade" id="modalProduto16" tabindex="-1" aria-labelledby="modalProduto16Label">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalProduto16Label">Linguiça Cuiabana Suína</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="assets/img/Produtos TC/CuiabanasArgolas/cuiabana suína.jpg"
+                                class="img-fluid rounded" alt="Espeto Medalhão Frango">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modalProduto17" tabindex="-1" aria-labelledby="modalProduto17Label">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalProduto17Label">Linguiça Cuiabana Bovina</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="assets/img/Produtos TC/CuiabanasArgolas/cuiabana bovina.jpg"
+                                class="img-fluid rounded" alt="carne">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modalProduto18" tabindex="-1" aria-labelledby="modalProduto18Label">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalProduto18Label">Linguiça Cuiabana Frango</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="assets/img/Produtos TC/CuiabanasArgolas/cuiabana de frango.jpg"
+                                class="img-fluid rounded" alt="carne">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modais dos Produtos Linguiças Recheadas (TODO - AJUSTAR) -->
+        <section>
+            <div class="modal fade" id="modalProduto16" tabindex="-1" aria-labelledby="modalProduto16Label">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalProduto16Label">Linguiça Cuiabana Suína</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="assets/img/Produtos TC/CuiabanasArgolas/cuiabana suína.jpg"
+                                class="img-fluid rounded" alt="Espeto Medalhão Frango">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modalProduto17" tabindex="-1" aria-labelledby="modalProduto17Label">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalProduto17Label">Linguiça Cuiabana Bovina</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="assets/img/Produtos TC/CuiabanasArgolas/cuiabana bovina.jpg"
+                                class="img-fluid rounded" alt="carne">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modalProduto18" tabindex="-1" aria-labelledby="modalProduto18Label">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalProduto18Label">Linguiça Cuiabana Frango</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="assets/img/Produtos TC/CuiabanasArgolas/cuiabana de frango.jpg"
+                                class="img-fluid rounded" alt="carne">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Modais dos Produtos Molhos e Pimentas (TODO - AJUSTAR) -->
+        <section>
+            <div class="modal fade" id="modalProduto16" tabindex="-1" aria-labelledby="modalProduto16Label">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalProduto16Label">Linguiça Cuiabana Suína</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="assets/img/Produtos TC/CuiabanasArgolas/cuiabana suína.jpg"
+                                class="img-fluid rounded" alt="Espeto Medalhão Frango">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modalProduto17" tabindex="-1" aria-labelledby="modalProduto17Label">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalProduto17Label">Linguiça Cuiabana Bovina</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="assets/img/Produtos TC/CuiabanasArgolas/cuiabana bovina.jpg"
+                                class="img-fluid rounded" alt="carne">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modalProduto18" tabindex="-1" aria-labelledby="modalProduto18Label">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalProduto18Label">Linguiça Cuiabana Frango</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="assets/img/Produtos TC/CuiabanasArgolas/cuiabana de frango.jpg"
+                                class="img-fluid rounded" alt="carne">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modais dos Produtos Afins (TODO - AJUSTAR) -->
+        <section>
+            <div class="modal fade" id="modalProduto16" tabindex="-1" aria-labelledby="modalProduto16Label">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalProduto16Label">Linguiça Cuiabana Suína</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="assets/img/Produtos TC/CuiabanasArgolas/cuiabana suína.jpg"
+                                class="img-fluid rounded" alt="Espeto Medalhão Frango">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modalProduto17" tabindex="-1" aria-labelledby="modalProduto17Label">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalProduto17Label">Linguiça Cuiabana Bovina</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="assets/img/Produtos TC/CuiabanasArgolas/cuiabana bovina.jpg"
+                                class="img-fluid rounded" alt="carne">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modalProduto18" tabindex="-1" aria-labelledby="modalProduto18Label">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalProduto18Label">Linguiça Cuiabana Frango</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="assets/img/Produtos TC/CuiabanasArgolas/cuiabana de frango.jpg"
+                                class="img-fluid rounded" alt="carne">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
     </main>
 
     <!-- Footer-->
@@ -1501,7 +1787,8 @@
             <!-- Informações de Contato -->
             <div class="row mt-3">
                 <div class="col text-center text-white small">
-                    <div>Endereço: Avenida Nevada, 106, Santo André, SP</div>
+                    <div>Endereço: Rua Mata Machado, 752 - Vila Califórnia - SP</div>
+                    <div>CEP: CEP 03215-000 – SP</div>
                     <div>Telefone: (11) 4977-1200</div>
                     <div>Email: <a href="mailto:contato@tudoemcarnes.com.br"
                             class="link-light">contato@tudoemcarnes.com.br</a></div>
