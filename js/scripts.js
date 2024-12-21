@@ -79,7 +79,7 @@
     const formData = new FormData(form);
 
     // Template ID específico para o formulário SAC
-    const templateId = "template_sac123"; // Substitua pelo ID correto do template SAC
+    const templateId = "template_utanb84"; // Substitua pelo ID correto do template SAC
 
     sendEmail(formData, templateId)
       .then((result) => {
@@ -127,6 +127,15 @@
 
     if (sacForm) {
       sacForm.addEventListener("submit", handleSacForm);
+
+
+      // Debug para verificar os valores dos campos
+      sacForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        console.log("Nome:", document.getElementById("name").value);
+        console.log("Email:", document.getElementById("email").value);        
+        console.log("Mensagem:", document.getElementById("message").value);
+      });
     }
   });
 })();
