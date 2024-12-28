@@ -48,6 +48,4 @@ document.querySelectorAll('[data-abrir-modal]').forEach(botao => {
   });
 });
 
-//LISTER DOS ENVIOS DE FORMULARIOS
-
-
+//LISTER DOS ENVIOS DE FORMULARIO
