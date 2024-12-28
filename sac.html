@@ -128,17 +128,18 @@
                 <div class="row gx-5">
                     <div class="col-lg-6">
                         <form id="sacForm">
+                            <input type="hidden" name="formulario" value="SAC">
                             <div class="mb-3">
-                                <label class="form-label" for="name">Nome</label>
-                                <input class="form-control" id="name" type="text" placeholder="Seu nome" required />
+                                <label class="form-label" for="nome">Nome</label>
+                                <input class="form-control" id="nome" type="text" placeholder="Seu nome" required />
                             </div>
                             <div class="mb-3">
                                 <label class="form-label" for="email">E-mail</label>
                                 <input class="form-control" id="email" type="email" placeholder="Seu e-mail" required />
                             </div>
                             <div class="mb-3">
-                                <label class="form-label" for="message">Mensagem</label>
-                                <textarea class="form-control" id="message" type="text" placeholder="Escreva sua mensagem aqui..." required></textarea>
+                                <label class="form-label" for="mensagem">Mensagem</label>
+                                <textarea class="form-control" id="mensagem" type="text" placeholder="Escreva sua mensagem aqui..." required></textarea>
                             </div>
                             <div class="d-grid">
                                 <button class="btn btn-danger btn-lg" type="submit">Enviar</button>
@@ -206,11 +207,14 @@
 
     <!-- Bootstrap core JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/forms.js"></script>
+    <script src="js/scripts.js"></script> 
     <script>
-        document.getElementById("contactForm").addEventListener("submit", function (e) {
-            e.preventDefault();
-            alert("Mensagem enviada com sucesso! Entraremos em contato em breve.");
-        });
+        // document.getElementById("contactForm").addEventListener("submit", function (e) {
+        //     e.preventDefault();
+        //     alert("Mensagem enviada com sucesso! Entraremos em contato em breve.");
+        // });
+        document.getElementById('sacForm').addEventListener('submit', (e) => enviarFormulario(e, 'sacForm'));
     </script>
 </body>
 
