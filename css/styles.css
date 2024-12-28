@@ -83,6 +83,13 @@
   }
 }
 
+#segundoModalID img {
+  pointer-events: none; /* Bloqueia interações diretas */
+  user-select: none; /* Impede seleção */
+  -webkit-user-drag: none; /* Impede arrastar no Safari/Chrome */
+}
+
+
 .conf-header .carousel{
   margin-top: 100px;
 }
