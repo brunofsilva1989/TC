@@ -139,3 +139,110 @@
     }
   });
 })();
+
+
+/*INTERAÇÂO DO MODAL*/
+
+//criar um mecanismo para chamar os modais dinamicamente de produtos
+// Seleciona todas as imagens que têm data-abrir-modal
+document.querySelectorAll('[data-abrir-modal]').forEach(botao => {
+  botao.addEventListener('click', () => {
+    const titulo = botao.getAttribute('data-titulo') || '';
+    const imagemNormal = botao.getAttribute('data-imagem-normal');
+    const imagemPacote = botao.getAttribute('data-imagem-pacote');
+
+    // Função para mostrar a imagem normal no modal
+    const exibirImagemNormal = () => {
+      document.getElementById('conteudoModal').innerHTML = `
+        <img src="${imagemNormal}" class="img-fluid" alt="${titulo}">
+        <div class="d-flex justify-content-center mt-3">
+          <button id="btnVerTamanhoReal" class="btn btn-danger">VER PACOTE EM TAMANHO REAL</button>
+        </div>
+      `;
+
+      // Configura o evento para o botão "VER PACOTE EM TAMANHO REAL"
+      document
+        .getElementById('btnVerTamanhoReal')
+        .addEventListener('click', exibirImagemPacote);
+    };
+
+    // Função para mostrar a imagem grande no modal
+    const exibirImagemPacote = () => {
+      document.getElementById('conteudoModal').innerHTML = `
+        <img src="${imagemPacote}" class="img-fluid" alt="${titulo}">
+        <div class="d-flex justify-content-center mt-3">
+        <button id="btnVoltar" class="btn btn-danger">VOLTAR</button>
+        </div>
+      `;
+
+      // Configura o evento para o botão "VOLTAR"
+      document
+        .getElementById('btnVoltar')
+        .addEventListener('click', exibirImagemNormal);
+    };
+
+    // Exibe a imagem normal ao iniciar o modal
+    exibirImagemNormal();
+
+    // Inicia o modal (Bootstrap 5)
+    const modalBootstrap = new bootstrap.Modal(document.getElementById('modalUnico'));
+    modalBootstrap.show();
+  });
+});
+
+
+
+
+
+
+// Seleciona todas as imagens que têm data-abrir-modal
+// document.querySelectorAll('[data-abrir-modal]').forEach(botao => {
+//   botao.addEventListener('click', () => {
+//     const titulo = botao.getAttribute('data-titulo') || '';
+//     const imagemNormal = botao.getAttribute('data-imagem-normal');
+//     const imagemPacote = botao.getAttribute('data-imagem-pacote');
+
+//     // Título no cabeçalho do modal
+//     document.getElementById('modalUnicoLabel').innerText = titulo;
+
+//     // Monta conteúdo HTML para imagem normal + botão
+//     document.getElementById('conteudoModal').innerHTML = `
+//       <img src="${imagemNormal}" class="img-fluid" alt="${titulo}">      
+//       <button id="btnVerTamanhoReal" class="btn btn-danger me-2 mb-0">VER PACOTE EM TAMANHO REAL</button>      
+//     `;
+
+//     // Inicia o modal (Bootstrap 5)
+//     const modalBootstrap = new bootstrap.Modal(document.getElementById('modalUnico'));
+//     modalBootstrap.show();
+
+//     // Quando clicar em "VER PACOTE EM TAMANHO REAL"
+//     document
+//       .getElementById('btnVerTamanhoReal')
+//       .addEventListener('click', () => {
+//         // Troca o conteúdo para a imagem grande
+//         document.getElementById('conteudoModal').innerHTML = `
+//           <img src="${imagemPacote}" class="img-fluid mb-3" alt="${titulo}">          
+//           <button id="btnVoltar" class="btn btn-secondary">VOLTAR</button>          
+//         `;
+
+//         // Botão "Voltar" para recarregar a imagem normal
+//         document
+//           .getElementById('btnVoltar')
+//           .addEventListener('click', () => {
+//             document.getElementById('conteudoModal').innerHTML = `
+//               <img src="${imagemNormal}" class="img-fluid mb-3" alt="${titulo}">
+//               <div class="align-self-center me-2 mb-0">
+//               <button id="btnVerTamanhoReal" class="btn btn-danger align-self-center me-2 mb-0">VER PACOTE EM TAMANHO REAL</button>
+//               </div>
+//             `;
+//             // Aqui poderia repetir a lógica do clique em "VER PACOTE EM TAMANHO REAL"
+//             // se quiser trocar novamente. Mas nesse caso, é só um exemplo simples.
+//           });
+//       });
+//   });
+// });
+
+
+
+
+

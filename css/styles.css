@@ -139,6 +139,16 @@ img#espetoImage {
   }
 }
 
+@media (max-width: 768px) {
+  /*Ajustar imagem imageBovinoAccordion para telas menores dimiunir a imagem*/
+
+  img#imageBovinoAccordion {
+    max-width: 150px;
+    height: auto;
+  }
+}
+
+
 .navbar img.logo-fixed {
   height: 100px; /* Ajusta a altura do logo para igualar à navbar */
   height: auto; /* Controle adicional para evitar que o logo fique maior que a navbar */
