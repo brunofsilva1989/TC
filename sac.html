@@ -127,7 +127,7 @@
                 <h2 class="fw-bolder mb-4 text-danger">Entre em contato com nosso SAC</h2>
                 <div class="row gx-5">
                     <div class="col-lg-6">
-                        <form id="sacForm">
+                        <form id="sacForm" onsubmit="enviarFormulario(event, 'sacForm')">
                             <input type="hidden" name="formulario" value="SAC">
                             <div class="mb-3">
                                 <label class="form-label" for="nome">Nome</label>

@@ -74,7 +74,7 @@
                     <!-- Contact Form -->
                     <div class="col-lg-6">
                         <h2 class="fw-bolder mb-4 text-danger">Envie-nos uma mensagem</h2>
-                        <form id="contactForm">
+                        <form id="contactForm" onsubmit="enviarFormulario(event, 'contatoForm')">
                             <input type="hidden" name="formulario" value="Contato">
                             <div class="mb-3">
                                 <label class="form-label" for="nome">Nome</label>
