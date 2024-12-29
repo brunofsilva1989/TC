@@ -118,6 +118,18 @@ body {
   background-attachment: fixed; 
 }
 
+.video-small {
+  width: 80%; /* Ajuste a largura como desejar */
+  max-width: 500px; /* Tamanho máximo */
+  height: auto; /* Mantém a proporção */
+  margin: 0 auto; /* Centraliza o vídeo */
+}
+
+.embed-responsive {
+  max-width: 500px; /* Ajuste o tamanho máximo */
+  margin: 0 auto; /* Centraliza horizontalmente */
+}
+
 .navbar .animate__bounceIn {
   margin-left: -100px; /* Move o logo mais à esquerda, ajustando conforme necessário */
 }
