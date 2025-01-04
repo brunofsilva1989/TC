@@ -68,30 +68,31 @@
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
-                        <input type="hidden" name="formulario" value="Trabalhe Conosco">
+                        
                         <form id="trabalheConoscoForm" onsubmit="enviarFormulario(event, 'trabalheConoscoForm')">
+                            <input type="hidden" name="formulario" value="Trabalhe Conosco">
                             <!-- Nome -->
                             <div class="mb-3">
                                 <label for="nome" class="form-label">Nome Completo</label>
-                                <input type="text" class="form-control" id="nome" placeholder="Digite seu nome completo"
+                                <input type="text" class="form-control" name="nome" id="nome" placeholder="Digite seu nome completo"
                                     required>
                             </div>
                             <!-- Email -->
                             <div class="mb-3">
                                 <label for="email" class="form-label">E-mail</label>
-                                <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail"
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Digite seu e-mail"
                                     required>
                             </div>
                             <!-- Telefone -->
                             <div class="mb-3">
                                 <label for="telefone" class="form-label">Telefone</label>
-                                <input type="tel" class="form-control" id="telefone" placeholder="Digite seu telefone"
+                                <input type="tel" class="form-control" name="telefone" id="telefone" placeholder="Digite seu telefone"
                                     required>
                             </div>
                             <!-- Área de Interesse -->
                             <div class="mb-3">
                                 <label for="area-interesse" class="form-label">Área de Interesse</label>
-                                <select class="form-select" id="area-interesse" required>
+                                <select class="form-select" name="area-interesse" id="area-interesse">
                                     <option value="" disabled selected>Selecione uma área</option>
                                     <option value="Administrativo">Administrativo</option>
                                     <option value="Vendas">Vendas</option>
@@ -103,7 +104,7 @@
                             <!-- Upload de Currículo -->
                             <div class="mb-3">
                                 <label for="curriculo" class="form-label">Anexe seu Currículo</label>
-                                <input type="file" class="form-control" id="curriculo" accept=".pdf,.doc,.docx"
+                                <input type="file" class="form-control" name="curriculo" id="curriculo" accept=".pdf,.doc,.docx"
                                     required>
                                 <small class="text-muted">Formatos aceitos: PDF, DOC, DOCX (máx: 2MB).</small>
                             </div>
@@ -185,10 +186,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="js/scripts.js"></script>
-    <script src="js/forms.js"></script>  
-    <script>
-        document.getElementById('trabalheConoscoForm').addEventListener('submit', (e) => enviarFormulario(e, 'trabalheConoscoForm'));
-    </script>  
+    <script src="js/forms.js"></script>        
 </body>
 
 </html>
