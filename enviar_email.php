@@ -25,6 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         exit;
     }
 
+<<<<<<< HEAD
     $formulario = $_POST['formulario'] ?? '';
 
     if (!$formulario) {
@@ -71,6 +72,33 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
+=======
+    // Determina o e-mail do destinatário com base no tipo de formulário
+    $para = match ($formulario) {
+        'SAC' => 'sac@tudoemcarnes.com.br',
+        'Contato' => 'comercial@tudoemcarnes.com.br',
+        'Trabalhe Conosco' => 'rh@tudoemcarnes.com.br',
+        default => null,
+    };
+
+    if (!$para) {
+        echo json_encode(['status' => 'error', 'message' => 'Formulário desconhecido.']);
+        exit;
+    }
+
+    // Configuração do PHPMailer
+    $mail = new PHPMailer(true);
+
+    try {
+        $mail->isSMTP();
+        $mail->Host = 'mail.tudoemcarnes.com.br';
+        $mail->SMTPAuth = true;
+        $mail->Username = 'site@tudoemcarnes.com.br'; // Seu e-mail
+        $mail->Password = 'Site2024@@'; // Sua senha
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+        $mail->Port = 587;
+
+>>>>>>> 429a3de233aa40e0c9c257e0fab2b34d98650869
         $mail->CharSet = 'UTF-8'; // Garante que o charset seja UTF-8
         $mail->setFrom('site@tudoemcarnes.com.br', 'Tudo em Carnes');
         $mail->addAddress($para);
