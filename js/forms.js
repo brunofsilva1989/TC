@@ -51,13 +51,9 @@ function enviarFormulario(event, formId) {
         }
     });
 
-<<<<<<< HEAD
     //criar um log no console para ver oqeu esta sendo enviado no formulario trabalhe conosco
     console.log(formData);
     
-
-=======
->>>>>>> 429a3de233aa40e0c9c257e0fab2b34d98650869
     if (!valid) {
         alert('Por favor, preencha todos os campos obrigatórios.');
         submitButton.disabled = false; // Reativa o botão se a validação falhar
