@@ -11,6 +11,8 @@ header('Expires: 0');
 header('Pragma: no-cache');
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    error_log("Formulário enviado via POST");
+
     $formulario = $_POST['formulario'] ?? '';
     $nome = $_POST['nome'] ?? '';
     $email = $_POST['email'] ?? '';
@@ -21,18 +23,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // Validação básica
     if (empty($nome) || empty($email)) {
+        error_log("Campos obrigatórios não preenchidos");
         echo json_encode(['status' => 'error', 'message' => 'Preencha todos os campos obrigatórios.']);
         exit;
     }
 
-<<<<<<< HEAD
-    $formulario = $_POST['formulario'] ?? '';
-
-    if (!$formulario) {
-        echo json_encode(['status' => 'error', 'message' => 'Formulário não enviado.']);
-        exit;
-    }
-
     // Determina o e-mail do destinatário com base no tipo de formulário
     $para = match ($formulario) {
         'SAC' => 'sac@tudoemcarnes.com.br',
@@ -42,46 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     };
 
     if (!$para) {
-        echo json_encode(['status' => 'error', 'message' => 'Formulário desconhecido.']);
-        exit;
-    }
-
-    error_log("Valor do campo formulario: " . $formulario);
-
-
-    //criar um log para ver oque esta sendo enviado
-    $log = fopen('log.txt', 'a');
-    fwrite($log, "Formulário: $formulario\n");
-    fwrite($log, "Nome: $nome\n");
-    fwrite($log, "E-mail: $email\n");
-    fwrite($log, "Telefone: $telefone\n");
-    fwrite($log, "Mensagem: $mensagem\n");
-    fwrite($log, "Área de Interesse: $areaInteresse\n");
-    fclose($log);
-
-
-    // Configuração do PHPMailer
-    $mail = new PHPMailer(true);
-
-    try {
-        $mail->isSMTP();
-        $mail->Host = 'mail.tudoemcarnes.com.br';
-        $mail->SMTPAuth = true;
-        $mail->Username = 'site@tudoemcarnes.com.br'; // Seu e-mail
-        $mail->Password = 'Site2024@@'; // Sua senha
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-        $mail->Port = 587;
-
-=======
-    // Determina o e-mail do destinatário com base no tipo de formulário
-    $para = match ($formulario) {
-        'SAC' => 'sac@tudoemcarnes.com.br',
-        'Contato' => 'comercial@tudoemcarnes.com.br',
-        'Trabalhe Conosco' => 'rh@tudoemcarnes.com.br',
-        default => null,
-    };
-
-    if (!$para) {
+        error_log("Formulário desconhecido: $formulario");
         echo json_encode(['status' => 'error', 'message' => 'Formulário desconhecido.']);
         exit;
     }
@@ -98,7 +54,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
->>>>>>> 429a3de233aa40e0c9c257e0fab2b34d98650869
         $mail->CharSet = 'UTF-8'; // Garante que o charset seja UTF-8
         $mail->setFrom('site@tudoemcarnes.com.br', 'Tudo em Carnes');
         $mail->addAddress($para);
@@ -199,6 +154,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $uploadDir = 'uploads/';
             $uploadFile = $uploadDir . basename($curriculo['name']);
             if (!move_uploaded_file($curriculo['tmp_name'], $uploadFile)) {
+                error_log("Erro ao anexar o currículo");
                 echo json_encode(['status' => 'error', 'message' => 'Erro ao anexar o currículo.']);
                 exit;
             }
@@ -209,8 +165,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $mail->AltBody = strip_tags($body);
 
         $mail->send();
+        error_log("E-mail enviado com sucesso");
         echo json_encode(['status' => 'success', 'message' => 'Mensagem enviada com sucesso!']);
     } catch (Exception $e) {
+        error_log("Erro ao enviar o e-mail: {$mail->ErrorInfo}");
         echo json_encode(['status' => 'error', 'message' => "Erro ao enviar o e-mail: {$mail->ErrorInfo}"]);
     }
 } else {
