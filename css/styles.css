@@ -11020,3 +11020,55 @@ html {
   background-repeat: no-repeat;
   min-height: 15rem;
 }
+
+
+/*Minhas novas implementações dia 08/08/2025*/
+
+/* container das colunas */
+.footer-contacts .contact-card{
+  position:relative;
+  padding:0 16px;
+}
+
+/* “linha” do título (selo + texto) com altura consistente */
+.footer-contacts .title-row{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:8px;
+  line-height:1.2;
+  min-height:26px;   /* garante topo alinhado mesmo com o selo */
+  margin:0 0 6px 0;
+}
+
+/* selo EM BREVE */
+.footer-contacts .badge-soon{
+  display:inline-block;
+  background:#e53935; /* vermelho vivo */
+  color:#fff;
+  padding:2px 8px;
+  font-weight:700;
+  font-size:.8rem;
+}
+
+.badge-soon {
+  display: inline-block;
+  background: #e60000;
+  color: #fff;
+  padding: 2px 8px;
+  font-weight: 700;
+  font-size: .8rem;
+  transform: translateY(-6px); /* SOBE o selo */
+}
+
+/* separador vertical no desktop sem mexer em largura */
+@media (min-width: 992px){
+  .footer-contacts .col-lg-3:not(:last-child) .contact-card::after{
+    content:"";
+    position:absolute;
+    top:0; right:-8px;
+    width:1px; height:100%;
+    background:rgba(255,255,255,.45);
+  }
+}
+
