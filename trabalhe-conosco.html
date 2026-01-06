@@ -72,12 +72,12 @@
                         <form id="trabalheConoscoForm" onsubmit="enviarFormulario(event, 'trabalheConoscoForm')">
                             <input type="hidden" name="formulario" value="Trabalhe Conosco">
                             <!-- Nome -->
-                            <div class="mb-3">
-                                <label for="nome" class="form-label">Nome Completo</label>
-                                <input type="text" class="form-control" name="nome" id="nome" placeholder="Digite seu nome completo"
-                                    required>
-                            </div>
-                            <!-- Email 
+        <div class="mb-3">
+            <label for="nome" class="form-label">Nome Completo</label>
+            <input type="text" class="form-control" name="nome" id="nome" placeholder="Digite seu nome completo"
+                required>
+        </div>
+        <!-- Email 
                             <div class="mb-3">
                                 <label for="email" class="form-label">E-mail</label>
                                 <input type="email" class="form-control" name="email" id="email" placeholder="Digite seu e-mail"
@@ -143,23 +143,32 @@
         </section>
 
         <!-- Links Vagas em aberto e banco de talentos -->
-        <section class="py-5 bg-light">
-            <div class="container px-5">
-                <h3 class="fw-bolder text-center mb-4 text-danger">Link's da TC</h3>
-                <div class="row gx-5">
-                    <div class="col-md-6 text-center">
-                        <i class="bi bi-briefcase-fill text-danger fs-1 mb-3"></i>
-                        <h5 class="fw-bolder"><a href="https://app.jobfy.pro/publico/vaga/59963" target="_blank">Vagas em Aberto</a></h5>
-                        <p class="text-muted">Busque a vaga que mais combina com você.</p>
+        <section class="py-6 bg-light">
+            <div class="container px-3">
+                <div class="d-flex justify-content-center">
+                    <div class="row align-items-center gx-0">
+                        <!-- TEXTO -->
+                        <div class="col-12 col-lg-8 text-center">
+
+                            <i class="bi bi-people-fill text-danger fs-1 mb-3 d-block"></i>
+
+
+                            <h5 class="fw-bolder mb-2"><a href="https://app.jobfy.pro/publico/vaga/59952"
+                                    target="_blank">Banco de Talentos</a></h5>
+                            <p class="text-muted mb-0">Deixe seu currículo conosco para futuras oportunidades.</p>
+                        </div>
+
+                        <!-- IMAGEM -->
+                        <div class="col-12 col-lg-4 mt-4 mt-lg-0 text-lg-start"
+                            style="position: relative; left: -100px;">
+                            <img src="assets/img/Background/IMAGEM.png" class="img-fluid" alt="Banco de Talentos"
+                                style="max-width: 340px; filter: drop-shadow(0 10px 18px rgba(0,0,0,.18));" />
+                        </div>
                     </div>
-                    <div class="col-md-6 text-center">
-                        <i class="bi bi-people-fill text-danger fs-1 mb-3"></i>
-                        <h5 class="fw-bolder"><a href="https://app.jobfy.pro/publico/vaga/59952" target="_blank">Banco de Talentos</a></h5>
-                        <p class="text-muted">Deixe seu currículo conosco para futuras oportunidades.</p>
-                    </div>                    
                 </div>
             </div>
-        </section>        
+        </section>
+
     </main>
     <!-- Footer-->
     <footer class="bg-dark py-4 mt-auto">
@@ -205,26 +214,27 @@
                         <div class="title-row"><strong>Centro de Distribuição (CD)</strong></div>
                         <div>Rua Mata Machado, 752</div>
                         <div>Vila Califórnia - São Paulo</div>
-                        <div>CEP: 03215-000 – SP</div>                        
+                        <div>CEP: 03215-000 – SP</div>
                     </div>
                 </div>
 
                 <div class="col-12 col-md-6 col-lg-3 px-3 mb-3 mb-lg-0 text-center">
-                    <div><span class="badge-soon">EM BREVE</span></div>
-                    <div><strong>Filial (Frigorífico)</strong></div>
+                    <!-- <div><span class="badge-soon">EM BREVE</span></div> -->
+                    <div class="title-row"><strong>Filial (Frigorífico)</strong></div>
                     <div>Rodovia Eng. João Tosello (SP-147) - S/N</div>
                     <div>Mogi Mirim</div>
                     <div>CEP: 13.800-970 - SP</div>
                 </div>
             </div>
-            <br>    
+            <br>
 
             <!-- Copyright e Links -->
             <div class="row mt-4">
                 <div class="col d-flex justify-content-between align-items-center flex-wrap text-white small">
                     <div class="m-0">
                         Copyright &copy; Tudo em Carnes 2025 - Criado por
-                        <a href="https://brunofsilva1989.github.io/portfolio/" target="_blank" class="link-light">Bruno Silva</a>
+                        <a href="https://brunofsilva1989.github.io/portfolio/" target="_blank" class="link-light">Bruno
+                            Silva</a>
                     </div>
                     <div>Email: <a href="mailto:contato@tudoemcarnes.com.br"
                             class="link-light">contato@tudoemcarnes.com.br</a></div>
@@ -244,7 +254,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="js/scripts.js"></script>
-    <script src="js/forms.js"></script>        
+    <script src="js/forms.js"></script>
 </body>
 
 </html>
