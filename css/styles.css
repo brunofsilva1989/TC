@@ -11072,5 +11072,23 @@ html {
   }
 }
 
+/*Creiar media querie para logo-tc*/
+.logo-loja{
+  width: clamp(120px, 35vw, 320px);
+  height: auto;
+}
+
+.logo-loja{
+  width: 180px;
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px){
+  .logo-loja{
+    width: 90vw;      /* fica grande no mobile */
+    max-width: 180px; /* não deixa gigante demais */
+  }
+}
 
 
