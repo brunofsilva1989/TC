@@ -11072,43 +11072,5 @@ html {
   }
 }
 
-/*MUDANÇAS NOVAS*/
-
-.tc-talentos-card{
-  background: #fff;
-  border-radius: 18px;
-  padding: 28px;
-  box-shadow: 0 10px 26px rgba(0,0,0,.08);
-  border: 1px solid rgba(0,0,0,.06);
-}
-
-.tc-link{
-  color: #0d6efd;           /* azul do link */
-  text-decoration: underline;
-}
-
-.tc-link:hover{
-  color: #0a58ca;
-}
-
-.tc-talentos-img{
-  max-width: 320px;
-  width: 100%;
-  height: auto;
-  filter: drop-shadow(0 10px 18px rgba(0,0,0,.18));
-}
-
-/* Ajuste fino no mobile pra imagem não “estourar” */
-@media (max-width: 576px){
-  .tc-talentos-card{ padding: 18px; }
-  .tc-talentos-img{ max-width: 260px; }
-}
-
-@media (min-width: 992px){
-  .tc-talentos-img{
-    margin-bottom: -30px;
-  }
-}
-
 
 
