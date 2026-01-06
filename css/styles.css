@@ -11074,12 +11074,12 @@ html {
 
 /*Creiar media querie para logo-tc*/
 .logo-loja{
-  width: clamp(400px, 35vw, 320px);
+  width: clamp(320px, 35vw, 320px);
   height: auto;
 }
 
 .logo-loja{
-  width: 520px;
+  width: 320px;
   max-width: 100%;
   height: auto;
 }
