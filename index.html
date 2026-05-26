@@ -30,6 +30,11 @@
 </head>
 
 <body class="d-flex flex-column h-100">
+    <div id="home-popup-banner" class="home-popup-banner" role="dialog" aria-label="Banner promocional">
+        <button id="home-popup-close" class="home-popup-close" type="button" aria-label="Fechar banner">&times;</button>
+        <img src="assets/img/Banner/popup.jpeg" alt="Banner promocional Tudo em Carnes">
+    </div>
+
     <main class="flex-shrink-0">
         <!-- Navigation -->
         <nav class="navbar navbar-expand-lg navbar-toggler navbar-light bg-white shadow-sm fixed-top">
@@ -405,6 +410,15 @@
         // Ocultar banner se o cookie já foi aceito
         if (document.cookie.includes("cookiesAccepted=true")) {
             document.getElementById("cookie-banner").style.display = "none";
+        }
+
+        const homePopupBanner = document.getElementById("home-popup-banner");
+        const homePopupClose = document.getElementById("home-popup-close");
+
+        if (homePopupBanner && homePopupClose) {
+            homePopupClose.addEventListener("click", function () {
+                homePopupBanner.classList.add("is-hidden");
+            });
         }
     </script>
 </body>
