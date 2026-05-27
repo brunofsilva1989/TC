@@ -18,8 +18,8 @@
 
 .home-popup-banner img {
   display: block;
-  width: 120%;
-  max-height: calc(120vh - 200px);
+  width: 100%;
+  max-height: calc(100vh - 160px);
   object-fit: contain;
   border-radius: 4px;
 }
@@ -66,12 +66,20 @@
 
 @media (max-width: 768px) {
   .home-popup-banner {
-    width: min(94vw, 500px);
-    padding: 10px;
+    width: min(84vw, 360px);
+    padding: 8px;
   }
 
   .home-popup-banner img {
-    max-height: calc(100vh - 120px);
+    max-height: calc(100vh - 130px);
+  }
+
+  .home-popup-close {
+    top: 6px;
+    right: 6px;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
   }
 
   @keyframes homePopupDrop {
